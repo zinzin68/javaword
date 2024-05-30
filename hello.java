@@ -21,7 +21,7 @@ public class hello {
         String[][] mean;
         String[][] example;
 
-        System.out.println("number of list" + cnt);
+        System.out.println("number of list " + cnt);
         System.out.println("Select word file");
         int selec = sc.nextInt();
 
