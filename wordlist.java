@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class hello {
+public class wordlist {
 	
 	public static void main(String args[]){
-        String dir_path = "./wordlist";
+        String dir_path = "./wordlist"; 
         int cnt = 0;
         Scanner sc = new Scanner(System.in);
 ;
@@ -16,7 +16,9 @@ public class hello {
         File[] list = dir.listFiles();
 
         for (int i=0 ; i<list.length ; i++) cnt++;
-        
+        System.out.println(list[0]);
+        System.out.println(list[1]);
+
         String[][] word;
         String[][] mean;
         String[][] example;
@@ -47,13 +49,15 @@ public class hello {
                     if (i%4 == 2) example[selec][i] = splitedStr[i].trim(); System.out.print(example[selec][i]+" ");
                     if (i%4==3) System.out.println();
                 }
+                for (int i=0; i<splitedStr.length ; i++){
+                    System.out.println(word[selec][i]);     
+                }
             }
 
         }catch(IOException e){
             e.printStackTrace();
         }
         
-		
 	}
 
 }
