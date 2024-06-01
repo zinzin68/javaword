@@ -1,176 +1,100 @@
-landscaping	����
-weed	����
-liquid	"�׻���, ��ü��"
-landscaper	"�����, ������"
-in advance	"�̸�, ������"
-hesitate	"�����ϴ�, �����̴�"
-treatment	(��ǰ � ����) ó��
-complex	(�ǹ�) ����
-lawn	�ܵ�
-approximately	"�뷫, ����"
-concern	"���, ����"
-rescue	"�����ϴ�, �����ϴ�"
-cage	�츮
-outgrow	�ʹ� �ڶ��
-underfed	"������ ����� ���� ����, ���� ������"
-clip	"�ڸ���, ���"
-be looking to do	~�ϱ⸦ ����ϴ�
-hop	������� �ٴ�
-tear	"(-tore - torn) ���, ����"
-anticipation	"���, ����"
-convey	"�����ϴ�, ���ϴ�"
-endeavour	"���, �õ�"
-transition	"�̵�, ��ȭ"
-take pride in	~�� �ڶ������� �����
-hoop	(����) ��
-renovate	�����ϴ�
-awesome	����
-put ~ in place	~�� �����ϴ�
-dive	�ް���
-toss about	~�� ������� ����
-bitterly	"����, �����ϰ�"
-massive	�Ŵ���
-gust of wind	��ǳ
-rip off	~�� ���� ����
-sting	���
-stream	"�귯������, �帣��"
-tenfold	10���
-rag doll	��� ����
-adolescent	û�ҳ�
-motivation	����
-development	"(���� ������) ���, ��Ȳ, ���"
-specific	��ü����
-participation	����
-task	"����, ����"
-assign	"�Ҵ��ϴ�, �ο��ϴ�"
-expectation	���
-guidance	��ħ
-logic	"�������� ��, ����(��)"
-transparent	"������, ������"
-context	�ƶ�
-relate ~ to ...	~�� ���� ������Ű��
-rule of thumb	���� ��Ģ
-validity	Ÿ�缺
-virtually	"����, ��ǻ�"
-fall on deaf ears	���õǴ�
-intention	�ǵ�
-format	����
-directness	������
-quality	����
-advent	����
-assumed name	����
-disreputable	"�Ҹ���������, ������ �� ����"
-cue	�ܼ�
-evaluate	���ϴ�
-virtual	������
-anonymous	�͸���
-appreciate	"�����ϴ�, �����ϴ�"
-industrialization	���ȭ
-cruelty	"������ ����, ������"
-alternative	"�ٸ�, ��ü ������"
-doubtless	�ǽ��� ��������
-turn a profit	������ ����
-humanely	�ε�������
-measurably	"���� ���, ������ �� �ְ�"
-progression	"����, ����, ���"
-consist in	~�� �ִ�
-indivisible	"���� �� ����, �Ұ�����"
-unfold	"�巯����, �����Ǵ�"
-consist of	~���� �̷������
-unbundle	"������ ������, ������ ������ �ű��"
-paste	���̴�
-confession	����
-spell out	~�� ���� �����ϴ�
-coherent	�ϰ��� �ִ�
-in one��s own right	"�� ��ü��, ȥ�� ������"
-self-contained	�ڸ�����
-constant	��������
-invasion	"ħ��, ħ��"
-offending	"���谨�� �ִ�, ������"
-on the grounds that	~�̶�� ����[�ٰ�]��
-utilization	"Ȱ��, �̿�"
-interrupt	�����ϴ�
-represent	(~�� ������) �Ǵ�
-recipient	�޴� ���
-skeptical	ȸ������
-enhance	���̴�
-device	"���, ��ġ"
-ingest	��Ű��
-entangle	"(�ɾ) ��¦ �� �ϰ� �ϴ�, ����Ŵ�"
-estimate	�����ϴ�
-endangered	���� ���⿡ ó��
-six-pack ring	6������ (ĵ ���� ���� ���� �ö�ƽ) ����
-habitat	������
-monk seal	��ũ�ٴ�ǥ��
-nursery	"������, ���� ȯ��, Ź�Ƽ�"
-entanglement	"���� ��, �ɷ���"
-Steller sea lion	ū�ٴٻ���
-critical	�߿���
-phase	"�ñ�, ���, ����"
-life cycle	��Ȱ �ֱ�
-container	"���, �׸�"
-canister	(�Ѳ��� ����) ����
-aspect	"����, ���"
-explain	(~�� ������) �����ϴ�
-decline	"����, �϶�"
-regulation	"����, ����"
-subject	"������, ���"
-informed consent	����� ������ �԰��� ����
-proposed	"��ȹ��, ���ȵ�"
-rigorous	"ö����, ������"
-oversee	�����ϴ�
-functionally	���������
-restriction	"����, ����"
-associated	���õ�
-sidestep	���ϴ�
-ethical	��������
-involved	���ݵǴ�
-presumably	"�Ƹ�, ���۰Ǵ�"
-potential	��������
-hazard	����
-devise	"�����ϴ�, ������ ����"
-drawback	"������, ����"
-generate	"����� ����, �߻���Ű��"
-physiology	"����, ���� ���"
-derive	"���, �����"
-typical	"��������, ��ǥ����"
-atypical	�̷�����
-interact	��ȣ �ۿ��� �ϴ�
-sensory	"��������, ������"
-concrete	��ü�� �ִ�
-manipulatable	"������ �� �ִ�, �ٷ� �� �ִ�"
-unique	"��Ư��, ������"
-curriculum	���� ����
-adapt	"�����ϰ� �ϴ�, �����ϴ�"
-mobility	"�̵�(��), �⵿(��)"
-expressive	"ǥ������ �ִ�, ǥ������"
-demonstration	(�۵� �����̳� ������ ���� �ù�) ����
-verifiable	Ȯ���� �� �ִ�
-motor disability	�ൿ ���
-finger paint	�ΰ������ÿ� ����(�հ������� �׸��� �׸� �� ����ϴ� ����)
-constantly	���Ӿ���
-refine	�����ϴ�
-aid	"����, �ŵ��"
-NASA	�̱� �װ� ���ֱ� (National Aeronautics and Space Administration)
-Jet Propulsion Laboratory	��Ʈ ���� ������ (�̱� NASA ���ϱⱸ)
-allow for	~�� �����ϰ� �ϴ�
-computer enhancement	��ǻ�� ��뿡 ���� ȭ�� ���
-MRI	�ڱ� ���� ����� (Magnetic Resonance Imaging)
-CT	��ǻ�� ���� �Կ� (Computerized Tomography)
-astronomy	õ����
-infrared sensor	���ܼ� ����
-remotely	"�ָ���, ��������"
-surgeon	�ܰ� ������
-map	"ã�Ƴ���, �߰��ϴ�"
-brain tumor	������
-Charge-Coupled Device chip technology	���� ���� ���� Ĩ ���
-stem from	~���� �����ϴ�
-Hubble Telescope	��� ������
-further	������Ű��
-detection	"�߰�, Ž��"
-resolution	�ػ�
-distinguish	�����ϴ�
-resort to	~�� �����ϴ�
-scarring	����
-radiation	����
-exposure	����
+takeover	인수 	I just learned of the takeover plan in my company. (나는 방금 우리 회사의 인수 계획을 알았다.)	1
+sultry	무더운, 찌는 듯이 더운 	It is so sultry outside today. (오늘 밖에는 매우 무덥다.)	1
+countenance	얼굴, 안색, 표정 	Her countenance revealed intense happiness. (그녀의 얼굴은 강한 행복감을 나타낸다.)	1
+tranquil	조용한 	He lived a very tranquil life. (그는 조용한 생을 살았다.)	1
+cherish	소중히 하다 	I cherish my childhood memory. (나는 내 어린 시절의 추억을 소중히 생각한다.)	1
+brief	보고하다 	He will brief you on this tomorrow. (그가 내일 이것에 대해 당신에게 보고할 것입니다.)	1
+dues	세금, 회비, 공과금 	Dues are $10.00 per year for each member of this meeting. (이 모임의 회원은 년간 회비가 10달러이다.)	1
+108.conservancy	관리 위원회, 보존, 관리, 감독 	This meeting is sponsored by the Nature Conservancy. (이 모임은 자연보호 위원회 후원입니다.)	1
+offset	상쇄하다. 보충하다. 보완하다. 	Another line of business can offset losses. (다른 사업망이 그 손실을 보완해 줄 수 있을 것입니다.)	1
+delay	지연시키다 	Construction on the project was delayed. (건설 사업 계획이 연기되었다.)	1
+value	가치 	The current value of property is very low. (재산의 현재 가치는 아주 낮다.)	1
+abortion	임신중절 	Abortion is illegal in many countries. (임신중절은 많은 나라에서 불법이다.)	1
+abuse	학대, 악용, 남용 	Drug abuse should be banned. (약물 남용은 금지되어야 한다.)	1
+alliance	동맹 관계, 협력 관계 	We make an alliance with oil company. (우리는 석유 회사와 협력 관계를 맺었다.)	1
+appliance	가전제품 	This is an appliance furnished apartment. (이곳은 가전제품이 설치된 아파트입니다.)	1
+deposit	예치금 	How much was the your deposit? (당신의 예치금이 얼마였습니까?)	1
+fix	고정시키다. 설치하다 	The new sign was fixed to the side of the building. (새 간판이 건물 옆쪽에 설치되었다.)	1
+view	전망, 조망 	The view from the top floor is very good. (맨 위층의 전망은 매우 좋다.)	1
+site	장소. 현장 	He is in the construction site right now. (그는 지금 건설 현장에 있다.)	1
+trust	신용 	Without rust there can be no sale. (신용 없이는 판매가 있을 수 없다.)	1
+investor	투자가 	The salesman tried to convince a group of investors. (그 판매원은 투자가들을 설득시키려고 했다.)	1
+property	자산, 부동산, 소유지 	This property belongs to our company. (이 부동산은 우리 회사 소유이다.)	1
+franchise	독점 판매 지역 	There are many franchises business in big cities. (대도시에는 독점 판매 사업이 많이 있습니다.)	1
+relocation	재배치. 이사 	You can call the relocation specialists. (이사 전문가들에게 전화해 보세요.)	1
+disconnect	(전화 등을 )끊다	This number was disconnected already. (이 번호는 벌써 끊긴 번호입니다.)	1
+busy    (전화기가)	1통화 중인 	The line was busy this time. (이 시간에는 통화 중이었습니다.)	1
+automation	자동화 	The factory produced more products after the install of automation system. (자동화 장치 설치후 공장에서는 더 많은 상품을 생산했다.)	1
+handbook	편람, 안내서 	Handbooks were provided to each person. (각각에게 안내서가 제공되었다.)	1
+distributor	(상품의)배급자, 판매 대리점	Contact your distributor when you have a problem. (문제점이 있으면 판매 대리점으로 연락하세요.)	1
+asset	재산, 장점 	It is all his asset. (이것이 그의 모든 재산이다.)	1
+bargain	교섭하다. 흥정하다 	We bargained with her for the use of the property. (우리는 그녀와 그 땅의 사용에 대해 흥정했다.)	1
+category	분류상의 구분, 범주 	Nutritionists categorize food into five basic groups. (영양학자들은 식품을 5가지 기본 단위로 구분한다.)	1
+contract	수축하다. 약정(계약하다)	1	If wool is submerged in hot water, it tends to contract. (만약 울이 뜨거운 물에 잠기면 수축하는 경향이 있다.)	1
+conciliator	회유자, 중재자 	The skilled conciliator settled the problem. (숙련된 중재자가 그 문제를 해결했다.)	1
+contemplate	신중히 생각하다. 숙소 하다 	Contemplate carefully before you make a decision. (결정을 하기 전에 주의 깊게 숙고하세요.)	1
+discolor	변색시키다 	The juice will discolor your clothes. (그 주스는 당신 옷을 변색시킬 것입니다.)	1
+hub	중심지 	This town was the hub of a rail network. (이 마을은 철로망의 중심지였다.)	1
+premium	보험료 	The premium will go down when you get older. (나이가 더 들수록 보험료는 내려갑니다.)	1
+recruit	신병을 모집하다. 보충병. 신병 	In war time, many young men were recruited. (전쟁중 많은 젊은이들이 징집되었다.)	1
+entitle	자격, 권리를 주다 	All the members of this meeting are entitled to vote. (이 회의에 있는 회원 모두에게 투표할 권리가 주어졌다.)	1
+141.margin	수익, 이윤 	He made a fair margin of profit. (그는 상당한 이익을 남겼다.)	1
+commitment	책임. 약속 	You should keep the marriage commitment. (결혼 서약을 꼭 지켜야 합니다.)	1
+obsolete	쇠퇴한, 쓸모 없어진 	A new computer program made the old one obsolete. (새 컴퓨터 프로그램이 옛날 것을 쓸모 없게 만들었다.)	1
+overpayment	초과 지불 	Any overpayment to the school should be returned. (학교에 대한 어떤 초과 지불도 되돌려 받아야 한다.)	1
+donation	기증. 기부(금)	The public library is supported by donations from many people. (공공 도서관은 많은 사람들의 기부금으로 보조받는다.)	1
+contractor	계약자 	The contractor will sign this project according to the agreement. (그 계약자는 합의에 따라 이 계획에 서명할 것이다.)	1
+delegate	대표로 임명하여 보내다 	The president of our company delegated a person to a convention. (우리 회사의 사장은 한 사람을 대표로 회의에 파견했다.)	1
+manufacture	제조하다. 생산하다 	This company manufactures motorcycles. (이 회사는 오토바이들을 생산한다.)	1
+legitimate	법률상 정당한 	That was proved to be legitimate claim. (그것은 법률상 정당한 요구임이 판명되었다.)	1
+emigrate	(다른 나라, 지방으로)이주하다	My uncle decided to emigrate to Cheju-do. (내 삼촌은 제주도로 이주할 것을 결정했다.)	1
+forgery	위조문서, 위조품 	This painting has been proved to be a forgery. (이 그림은 위조품임이 판명되었다.)	1
+accomplice	공범자 	The thief have an accomplice. (그 도둑은 공범자가 있었다.)	1
+fare	승차 요금(운임)	1	What is the train fare from Daejeen to Seoul? (대전에서 서울까지 기차 요금이 얼마나 하죠?)	1
+injure	손상당하다. 다치다 	He was not injured from the car accident. (그는 자동차 사고로 다치지는 않았다.)	1
+shimmer	빛이 희미하게 비침 	The calm sea shimmered in the moonlight. (고요한 바다가 달빛에 빛났다.)	1
+ambivalence	양면 가치 	Her ambivalence made it hard for us to reach a decision. (그녀의 양면 가치는 우리들이 결론에 이르는데 어려움을 주었다.)	1
+byproduct	부산물, 파생물 	We make many things form animal byproducts. (우리는 동물의 부산물로 많은 것을 만든다.)	1
+launch	(사업 등을)시작. 착수하다	She is launched on a new business. (그녀는 새로운 사업에 착수하고 있었다.)	1
+remodel	개조, 개축하다 	After the remodeling, the house was very nice. (개조 후에 그 집은 매우 좋았다.)	1
+resonable	합리적인, 적당한 	The price of this house is resonable. (그 집의 가격은 적당하다.)	1
+treat	한턱내기, 대접 	Is he going to treat us? (그가 우리에게 한턱 낼것인가요?)	1
+crossroad	교차로 	You can make a right turn at the crossroad. (교차로에서 우회전을 할 수 있습니다.)	1
+warrant	근거, 보증, 증서, 정당한 이유 	He had no warrant for doing it. (그는 그것을 하기에는 정당한 이유가 없다.)	1
+coherent	응집성의, 밀착한 ,조리가 선, 시종 일관한 	Your presentation is very coherent. (너의 발표는 매우 시종일관 조리가 서 있다. )	1
+rapport	(친밀한. 공감적인)관계, 조화, 동의. 일치 
+zest	풍미, 맛, 비상한 흥미, 열정 	He entered into our plans with zest. (그는 우리 계획에 비상한 흥미를 가지고 들어왔다.)	1
+shortcut	지름길	Can you show me the shortcut to City Hall? (시청까지 가는 지름길을 알려주겠어요?)	1
+vex	화내다 	He was vexed at his failure. (그는 실패해서 화냈다.)	1
+usher	안내인, 안내하다 	The boy ushered me into the drawing room. (그 소년이 나를 객실로 안내했다.)	1
+wither	시들다. 쇠퇴하다. 쇠약해지다 	She could see her beauty withering away. (그녀는 자신의 아름다움이 시들어 가는 것을 알 수 있었다.)	1
+savor	맛, 풍미, 향기, 맛이 나다. 기미가 있다. 	His opinion savors of dogmatism. (그의 견해는 일방적인 경향이 있다.)	1
+solicit	간청하다. 졸라대다. 부탁하다 	We solicit favors of you. (애호해 주시기 바랍니다.)	1
+poll	투표, 투표 결과, 투표하다 	The chairman will declare the poll. (의장이 투표 결과를 발표할 것이다.)	1
+emphasis 	중점. 강조 	Some schools lay special emphasis on language. (어떤 학교들은 어학에 특별히 중점을 둔다.)	1
+translation	번역 	The translation was true to the original. (그 번역은 원문에 충실했다.)	1
+paramount	최고의 	This is a matter of paramount importance. (이것은 가장 중요한 일이다.)	1
+realtor	부동산 중개인 	Mr. Nick is a realtor. (닉씨는 부동산 중개인입니다.)	1
+update	새롭게 하다. 최신의 것으로 하다 	I brought a updated dictionary. (나는 최신의 사전을 샀다.)	1
+treaty	조약 	The president of the company signed the treaty. (회사의 사장은 그 조약에 서명했다.)	1
+monetary system	화폐 제도	Modern technology is remarking the monetary system. (현대 기술은 화폐제도를 다시 만들고 있다.)	1
+rate	요금 	Telephone rates are cheaper at night. (전화요금은 밤에 더 싸다.)	1
+sanction	재가. 인가. 시인. 찬성 	I got a sanction from the author of this book to publish. (나는 이 책 저자로부터 출판 허가를 받았다.)	1
+evacuate	(사람을)피난시키다. 철수시키다. 배설하다. 배출하다	Police evacuated the hospital. (경찰은 사람들을 병원에서 피난시켰다.)	1
+revenue	소득. 수익 ; 고정 수입 	What was the total revenue of our company? (우리 회사의 총 수입이 무엇이었죠?)	1
+lament	슬퍼하다. 비탄하다 	I lament for the death of a friend. (나는 친구의 죽음을 비탄한다.)	1
+eminent	저명한, 유명한 	He is an eminent author of Japan. (그는 일본의 저명한 작가이다.)	1
+clerical	목사의. 성직(자)의 	The pastor wears clerical dress. (저 목사님은 성직 복을 입었다.)	1
+affiliate	가입시키다. 관계를 맺다 	The college is affiliated to the University. (단과대학은 종합대학에 관계되어 있다.)	1
+juvenile	젊은, 어린, 소년(소녀)의 	Juvenile crime is very serious these day. (오늘날 소년 범죄는 아주 심각하다. )	1
+mortgage	(양도)저당. 저당잡히기 	The bank lends money on mortgage the house. (은행은 집을 저당 잡고 돈을 빌려준다.)	1
+turnover	반환 	We talked about the turnover of Hong Kong. (우리는 홍콩 반환에 관해서 이야기했다.)	1
+revenue	소득, 수익	What was the total revenue of our company? (우리 회사의 총수입이 얼마였죠?)	1
+pregnant	임신한, 가득찬 	She is six months pregnant. (그녀는 임신 6개월이다.)	1
+indignant	분개한, 성난 	He was indignant to hear the news. (그는 소식을 듣고 분해했다.)	1
+trade sanction	무역 제재 	The U. S Trade Representative announced trade sanctions to Japan. (미국 무역 대표는 일본에 대해 무역 제재를 발표했다.)	1
+deficit	적자 	Our trade deficit went up last quarter. (우리의 무역 적자가 지난 분기에 올라갔다.)	1
+moment	순간. 찰나 → momentary 순간의 	Don't waste your time seeking after momentary joys. (순간적인 기쁨을 위해 당신의 시간을 낭비하지 마세요.)	1
+opponent	상대. 적 	Never take an unfair advantage of your opponent's weakness. (상대의 약점을 이용하지 말아라.)	1
+modesty	겸손. 조심성 	Everybody knows her modesty. (모든 사람이 그녀의 겸손함을 알고 있다.)	1
+merge	합병하다. 합체시키다. 	The two companies were merged in the new company. (이 두 회사는 합동하여 새 회사를 만들었다.)

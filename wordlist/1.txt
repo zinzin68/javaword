@@ -1,18 +1,18 @@
 dealership	판매 대리점 	Hankuk motor company expanded dealerships in Cheju-island. (한국 자동차 회사는 제주도에 판매 대리점을 확장했다.)	1
-gateway	수단, 통로 	This program is the gateway to solve the problem. (이 프로그램이 그 문제를 푸는 수단이다.)	1
-transaction	거래 	Using other person's credit card is an illegal transaction. (다른 사람의 크레딧 카드를 사용하는 것은 불법 거래이다.)	1
-integrity	성실, 청렴 	He is a man of integrity. (그는 성실한 사람이다.)	1
-indemnify	～에게 배상(보상)하다. 면제하다 	She will indemnify you for the loss. (그녀는 당신의 손해를 보상할 것입니다.)	1
-reluctant	꺼리는 	He was reluctant to tell the truth. (그는 진실을 말하기를 꺼렸다.)	1
-conspicuous	눈에 띄는, 똑똑히 보이는 	That is a conspicuous road sign. (저것은 보기 쉬운 도로 표지이다.)	1
-nasty	불쾌한, 싫은, 역한 	This is a really nasty medicine. (이것은 정말로 먹기 힘든 약이다.)	1
-global	세계의 	English became a global language. (영어는 세계의 언어가 되었다.)	1
-avocation	부업, 취미 	His avocation is making artificial flowers. (그의 부업은 조화를 만드는 것이다.)	1
+gateway	수단, 통로	This program is the gateway to solve the problem. (이 프로그램이 그 문제를 푸는 수단이다.)	1
+transaction	거래	Using other person's credit card is an illegal transaction. (다른 사람의 크레딧 카드를 사용하는 것은 불법 거래이다.)	1
+integrity	성실, 청렴	He is a man of integrity. (그는 성실한 사람이다.)	1
+indemnify	～에게 배상(보상)하다. 면제하다	She will indemnify you for the loss. (그녀는 당신의 손해를 보상할 것입니다.)	1
+reluctant	꺼리는	He was reluctant to tell the truth. (그는 진실을 말하기를 꺼렸다.)	1
+conspicuous	눈에 띄는, 똑똑히 보이는	That is a conspicuous road sign. (저것은 보기 쉬운 도로 표지이다.)	1
+nasty	불쾌한, 싫은, 역한	This is a really nasty medicine. (이것은 정말로 먹기 힘든 약이다.)	1
+global	세계의	English became a global language. (영어는 세계의 언어가 되었다.)	1
+avocation	부업, 취미	His avocation is making artificial flowers. (그의 부업은 조화를 만드는 것이다.)	1
 adjacent	이웃한, 인접한 	Adjacent states often sign trade agreements with one another. (인접한 나라들은 종종 서로서로 무역협정에 서명한다.)	1
 operating rate	조업(가동)률 	The factory has an operating rate of 70%. (공장의 가동률이 70% 이다.)	1
 addiction	중독, 열중 	Drug addiction can ruin your life. (약물중독은 당신의 인생을 망칠 수 있습니다.)	1
 shipment	선적 	Money must be paid in advance of shipment. (선적 전에 돈이 지불되어야 한다.)	1
-itinerary(여행)일정 	This is your flight itinerary. (이것이 당신의 비행 일정입니다.)	1
+itinerary	(여행)일정	This is your flight itinerary. (이것이 당신의 비행 일정입니다.)	1
 financier	재정가, 금융업자 	One financier suggested that he pay the debt. (한 재정가가 그가 빚을 변제할 것을 제안했다.)	1
 profitable	이윤이 남는 	Computer business is really profitable. (컴퓨터 사업은 정말로 이윤이 많이 생긴다.)	1
 assessment	사정, 평가 	You will find economic assessment in this newspaper. (이 신문에서 경제 평가를 찾을 수 있습니다.)	1
@@ -31,14 +31,14 @@ advent	출현 	The advent of computer changed many things. (컴퓨터의 출현�
 consumer	소비자 	How will consumers be protected? (어떻게 소비자들이 보호될 수 있을까요?)	1
 personnel	인원, 인력 	I worked in personnel department for last three years. (나는 지난 3년 동안 인사부에서 일했다.)	1
 promotion	진급 	His promotion is mainly due to his diligence. (그의 승진의 주원인은 그의 근면함에 있다.)	1
-wage(노동자의)	1임금 	The workers get their wages by the working hours. (노동자들은 근무시간에 따라서 임금을 받는다.)	1
+wage	(노동자의)임금	The workers get their wages by the working hours. (노동자들은 근무시간에 따라서 임금을 받는다.)	1
 insurance	보험 	The insurance company will cover all your car accident bill. (보험회사는 당신의 자동차 사고 비용 전부를 부담할 것입니다.)	1
 compile	편찬, 편집하다. 	We compiled a guidebook for the visitors. (우리는 방문객들을 위해서 안내 책자를 편집했다.)	1
 feasible	실행 가능한 	This plan is really feasible if we try hard. (우리가 열심히 한다면 이 계획은 정말로 실현 가능합니다.)	1
-commute	통근하다 	I commute every morning by bus. (나는 매일 아침 버스로 통근한다.)	1
+commute	통근하다	I commute every morning by bus. (나는 매일 아침 버스로 통근한다.)	1
 stock	증권, 주식 	They had acquired 60 percent of Honda's stock. (그들은 혼다주의 60%를 가지고 있다.)	1
-output	산출, 생산물 	This new automation system improved our production output. (이 새 자동장치가 우리의 생산량을 증가시켰다.)	1
-predict	예측하다 	Can we predict sales for next year without proper market research? (알맞은 시장조사 없이 내년도의 판매량을 우리가 예측할 수 있나요?)	1
+output	산출, 생산물	This new automation system improved our production output. (이 새 자동장치가 우리의 생산량을 증가시켰다.)	1
+predict	예측하다	Can we predict sales for next year without proper market research? (알맞은 시장조사 없이 내년도의 판매량을 우리가 예측할 수 있나요?)	1
 crisis	위기 	If you can come through this crisis, your future looks bright. (만일 당신이 이번 위기를 잘 넘어간다면, 당신의 미래는 빛날 것입니다.)	1
 project	계획 	I finished this project with the help of my teammates. (나는 내 팀동료들의 도움으로 이 계획을 마쳤다.)	1
 expertise	전문적인 지식과 기술 	Two companies signed the agreement of trade off their expertise. (두 회사는 그들의 기술을 서로 교환하기로 한 약속에 서명했다.)	1
@@ -48,8 +48,7 @@ supervisor	감독 	He is our new supervisor. (그는 우리의 새 감독관이�
 headquarters	본부, 본사 	The headquarters of my company is in Seoul. (우리 회사의 본사는 서울에 있습니다.)	1
 branch	지점 	We have many branch offices around the nation. (우리는 전국적으로 지점 사무실들을 가지고 있습니다.)	1
 flourish	번창하다 	Her flower business is flourishing. (그녀의 꽃 사업이 번창하고 있습니다.)	1
- brisk	활동적인, 활발한 
-Business is brisk here in Indonesia. (이곳 인도네시아에는 사업이 활발합니다.)	1
+ brisk	활동적인, 활발한	Business is brisk here in Indonesia. (이곳 인도네시아에는 사업이 활발합니다.)	1
 reconvene	회의를 다시 열다 	After the break, the meeting reconvened. (휴식 후 회의가 다시 열렸다.)	1
 conference	회의 	We will have an another conference in two hours. (우리는 두 시간 후에 또 다른 회의가 있을 것입니다.)	1
 roll	인명부 	All committee members in this room should write their names in this roll. (이 방에 있는 모든 회원들은 자신의 이름을 이 인명부에 써넣어야 합니다.)	1
@@ -70,7 +69,7 @@ retailer	소매상 	There are many toy retailers in the city. (도시에는 장�
 earnings	수입. 수익 	Our earnings rose 10% in the first quarter of this year. (우리의 수입이 올해 1분기에 10% 증가했다.)	1
 operation	작업 과정. 공정 	Our entire operation is controled by this machine. (우리의 전체 작업 과정은 이 기계에 의해 조정된다.)	1
 corporation	기업 . 회사 	The office automation division has become the fastest growing group in the corporation in the past 3 years. (사무자동화 부서가 지난 3년간 기업에서 가장 빠른 성장을 한 부서가 되었다.)	1
-mechanism(목적 달성을 위한)수단, 작용 	The mechanism functions well as previously promised. (사전 약속대로 기능 작동이 잘 되었다.)	1
+mechanism	(목적 달성을 위한)수단, 작용	The mechanism functions well as previously promised. (사전 약속대로 기능 작동이 잘 되었다.)	1
 form	서식 	Fill out this form following the directions. (지침을 따라서 이 서식을 작성하세요.)	1
 payment	지불 금액 	The payment due for this apartment is March (이 아파트에 대한 지불 금액 마감일은 3월 16일 입니다.)	1
 account	계정 	I'd like to open a new account. (새 계좌를 하나 만들고 싶은데요.)	1
@@ -85,7 +84,7 @@ agreement	협정, 합의 	We signed the agreement. (우리는 그 협의에 서�
 negotiation	협상 	The negotiations broke off when both sides didn't keep the agreement. (양쪽 진영에서 약속을 지키지 않아서 그 협상은 중단되었다.)	1
 exhibition	전시회 	The exhibition will be held tomorrow. (내일 전시회가 열릴 것입니다.)	1
 director	이사 	The director decided to join the project. (이사는 그 계획에 동참하기로 결정했다.)	1
-council	심의회, 자문회 	The council adopted the resolution. (그 심의회는 결과를 채택했다.)	1
+council	심의회, 자문회	The council adopted the resolution. (그 심의회는 결과를 채택했다.)	1
 forward	보내다. 발송하다 	The purchase order was forwarded to the manager. (구입 주문서가 지배인에게 발송되었습니다.)	1
 reconsider	재고하다, 다시 고려하다 	Can you reconsider your decision? (당신의 결정을 재고하실 수 있습니까?)	1
 lucrative	수지 맞는, 돈이 벌리는 	Stock market is lucrative business. (주식시장은 수지 맞는 사업이다.)	1
@@ -94,109 +93,8 @@ assembly line	일관 작업 배치 	The assembly line was shut down for 10 minut
 capital	자본 	He has an enough capital for the investment. (그는 그 투자에 필요한 충분한 자본을 가지고 있다.)	1
 delivery	배달 	We do have a delivery service. (우리는 배달 봉사를 하고 있습니다.)	1
 selections	선택된 물건들, 발췌 	You will receive your selections by tomorrow. (당신은 선택하신 물품들을 내일까지 받으실 것입니다.)	1
-remit(돈, 하물 등을)	1보내다. 부치다. 	Remit the money to our company at once. (지금 우리 회사로 송금해 주십시오. 
-refineries	정제소 	This is a newly built salt refineries. (이곳은 새로 지은 소금 정제소입니다.)	1
-day off	휴일 	Tomorrow is my day off. (내일은 저의 휴일입니다.)	1
-extension	교환 	Please call me at extension (교환11번으로 저에게 전화해 주세요.)	1
+remit	(돈, 하물 등을)보내다. 부치다.	Remit the money to our company at once. (지금 우리 회사로 송금해 주십시오.  1
+refineries	정제소	This is a newly built salt refineries. (이곳은 새로 지은 소금 정제소입니다.)	1
+day off	휴일	Tomorrow is my day off. (내일은 저의 휴일입니다.)	1
+extension	교환	Please call me at extension (교환11번으로 저에게 전화해 주세요.)	1
 overrun	초과, 이월액, 잉여 	We produced fresh juice from a weekend overrun. (우리는 주말의 초과 작업을 통해서 신선한 주스를 생산했습니다.)	1
-takeover	인수 	I just learned of the takeover plan in my company. (나는 방금 우리 회사의 인수 계획을 알았다.)	1
-sultry	무더운, 찌는 듯이 더운 	It is so sultry outside today. (오늘 밖에는 매우 무덥다.)	1
-countenance	얼굴, 안색, 표정 	Her countenance revealed intense happiness. (그녀의 얼굴은 강한 행복감을 나타낸다.)	1
-tranquil	조용한 	He lived a very tranquil life. (그는 조용한 생을 살았다.)	1
-cherish	소중히 하다 	I cherish my childhood memory. (나는 내 어린 시절의 추억을 소중히 생각한다.)	1
-brief	보고하다 	He will brief you on this tomorrow. (그가 내일 이것에 대해 당신에게 보고할 것입니다.)	1
-dues	세금, 회비, 공과금 	Dues are $10.00 per year for each member of this meeting. (이 모임의 회원은 년간 회비가 10달러이다.)	1
-108.conservancy	관리 위원회, 보존, 관리, 감독 	This meeting is sponsored by the Nature Conservancy. (이 모임은 자연보호 위원회 후원입니다.)	1
-offset	상쇄하다. 보충하다. 보완하다. 	Another line of business can offset losses. (다른 사업망이 그 손실을 보완해 줄 수 있을 것입니다.)	1
-delay	지연시키다 	Construction on the project was delayed. (건설 사업 계획이 연기되었다.)	1
-value	가치 	The current value of property is very low. (재산의 현재 가치는 아주 낮다.)	1
-abortion	임신중절 	Abortion is illegal in many countries. (임신중절은 많은 나라에서 불법이다.)	1
-abuse	학대, 악용, 남용 	Drug abuse should be banned. (약물 남용은 금지되어야 한다.)	1
-alliance	동맹 관계, 협력 관계 	We make an alliance with oil company. (우리는 석유 회사와 협력 관계를 맺었다.)	1
-appliance	가전제품 	This is an appliance furnished apartment. (이곳은 가전제품이 설치된 아파트입니다.)	1
-deposit	예치금 	How much was the your deposit? (당신의 예치금이 얼마였습니까?)	1
-fix	고정시키다. 설치하다 	The new sign was fixed to the side of the building. (새 간판이 건물 옆쪽에 설치되었다.)	1
-view	전망, 조망 	The view from the top floor is very good. (맨 위층의 전망은 매우 좋다.)	1
-site	장소. 현장 	He is in the construction site right now. (그는 지금 건설 현장에 있다.)	1
-trust	신용 	Without rust there can be no sale. (신용 없이는 판매가 있을 수 없다.)	1
-investor	투자가 	The salesman tried to convince a group of investors. (그 판매원은 투자가들을 설득시키려고 했다.)	1
-property	자산, 부동산, 소유지 	This property belongs to our company. (이 부동산은 우리 회사 소유이다.)	1
-franchise	독점 판매 지역 	There are many franchises business in big cities. (대도시에는 독점 판매 사업이 많이 있습니다.)	1
-relocation	재배치. 이사 	You can call the relocation specialists. (이사 전문가들에게 전화해 보세요.)	1
-disconnect(전화 등을 )	1끊다 	This number was disconnected already. (이 번호는 벌써 끊긴 번호입니다.)	1
-
-busy(전화기가)	1통화 중인 	The line was busy this time. (이 시간에는 통화 중이었습니다.)	1
-automation	자동화 	The factory produced more products after the install of automation system. (자동화 장치 설치후 공장에서는 더 많은 상품을 생산했다.)	1
-handbook	편람, 안내서 	Handbooks were provided to each person. (각각에게 안내서가 제공되었다.)	1
-distributor(상품의)배급자, 판매 대리점 	Contact your distributor when you have a problem. (문제점이 있으면 판매 대리점으로 연락하세요.)	1
-asset	재산, 장점 	It is all his asset. (이것이 그의 모든 재산이다.)	1
-bargain	교섭하다. 흥정하다 	We bargained with her for the use of the property. (우리는 그녀와 그 땅의 사용에 대해 흥정했다.)	1
-category :분류상의 구분, 범주 	Nutritionists categorize food into five basic groups. (영양학자들은 식품을 5가지 기본 단위로 구분한다.)	1
-contract	수축하다. 약정(계약하다)	1	If wool is submerged in hot water, it tends to contract. (만약 울이 뜨거운 물에 잠기면 수축하는 경향이 있다.)	1
-conciliator	회유자, 중재자 	The skilled conciliator settled the problem. (숙련된 중재자가 그 문제를 해결했다.)	1
-contemplate	신중히 생각하다. 숙소 하다 	Contemplate carefully before you make a decision. (결정을 하기 전에 주의 깊게 숙고하세요.)	1
-discolor	변색시키다 	The juice will discolor your clothes. (그 주스는 당신 옷을 변색시킬 것입니다.)	1
-hub	중심지 	This town was the hub of a rail network. (이 마을은 철로망의 중심지였다.)	1
-premium	보험료 	The premium will go down when you get older. (나이가 더 들수록 보험료는 내려갑니다.)	1
-recruit	신병을 모집하다. 보충병. 신병 	In war time, many young men were recruited. (전쟁중 많은 젊은이들이 징집되었다.)	1
-entitle	자격, 권리를 주다 	All the members of this meeting are entitled to vote. (이 회의에 있는 회원 모두에게 투표할 권리가 주어졌다.)	1
-141.margin	수익, 이윤 	He made a fair margin of profit. (그는 상당한 이익을 남겼다.)	1
-commitment	책임. 약속 	You should keep the marriage commitment. (결혼 서약을 꼭 지켜야 합니다.)	1
-obsolete	쇠퇴한, 쓸모 없어진 	A new computer program made the old one obsolete. (새 컴퓨터 프로그램이 옛날 것을 쓸모 없게 만들었다.)	1
-overpayment	초과 지불 	Any overpayment to the school should be returned. (학교에 대한 어떤 초과 지불도 되돌려 받아야 한다.)	1
-donation	기증. 기부(금)	1	The public library is supported by donations from many people. (공공 도서관은 많은 사람들의 기부금으로 보조받는다.)	1
-contractor	계약자 	The contractor will sign this project according to the agreement. (그 계약자는 합의에 따라 이 계획에 서명할 것이다.)	1
-delegate	대표로 임명하여 보내다 	The president of our company delegated a person to a convention. (우리 회사의 사장은 한 사람을 대표로 회의에 파견했다.)	1
-manufacture	제조하다. 생산하다 	This company manufactures motorcycles. (이 회사는 오토바이들을 생산한다.)	1
-legitimate	법률상 정당한 	That was proved to be legitimate claim. (그것은 법률상 정당한 요구임이 판명되었다.)	1
-emigrate(다른 나라, 지방으로)	1이주하다 	My uncle decided to emigrate to Cheju-do. (내 삼촌은 제주도로 이주할 것을 결정했다.)	1
-forgery	위조문서, 위조품 	This painting has been proved to be a forgery. (이 그림은 위조품임이 판명되었다.)	1
-accomplice	공범자 	The thief have an accomplice. (그 도둑은 공범자가 있었다.)	1
-fare	승차 요금(운임)	1	What is the train fare from Daejeen to Seoul? (대전에서 서울까지 기차 요금이 얼마나 하죠?)	1
-injure	손상당하다. 다치다 	He was not injured from the car accident. (그는 자동차 사고로 다치지는 않았다.)	1
-shimmer	빛이 희미하게 비침 	The calm sea shimmered in the moonlight. (고요한 바다가 달빛에 빛났다.)	1
-ambivalence	양면 가치 	Her ambivalence made it hard for us to reach a decision. (그녀의 양면 가치는 우리들이 결론에 이르는데 어려움을 주었다.)	1
-byproduct	부산물, 파생물 	We make many things form animal byproducts. (우리는 동물의 부산물로 많은 것을 만든다.)	1
-launch(사업 등을 )	1시작. 착수하다 	She is launched on a new business. (그녀는 새로운 사업에 착수하고 있었다.)	1
-remodel	개조, 개축하다 	After the remodeling, the house was very nice. (개조 후에 그 집은 매우 좋았다.)	1
-resonable	합리적인, 적당한 	The price of this house is resonable. (그 집의 가격은 적당하다.)	1
-treat	한턱내기, 대접 	Is he going to treat us? (그가 우리에게 한턱 낼것인가요?)	1
-crossroad	교차로 	You can make a right turn at the crossroad. (교차로에서 우회전을 할 수 있습니다.)	1
-warrant	근거, 보증, 증서, 정당한 이유 	He had no warrant for doing it. (그는 그것을 하기에는 정당한 이유가 없다.)	1
-coherent	응집성의, 밀착한 ,조리가 선, 시종 일관한 	Your presentation is very coherent. (너의 발표는 매우 시종일관 조리가 서 있다. )	1
-rapport(친밀한. 공감적인)	1관계, 조화, 동의. 일치 
-zest	풍미, 맛, 비상한 흥미, 열정 	He entered into our plans with zest. (그는 우리 계획에 비상한 흥미를 가지고 들어왔다.)	1
-shortcut	지름길 	Can you show me the shortcut to City Hall? (시청까지 가는 지름길을 알려주겠어요?)	1
-vex	화내다 	He was vexed at his failure. (그는 실패해서 화냈다.)	1
-usher	안내인, 안내하다 	The boy ushered me into the drawing room. (그 소년이 나를 객실로 안내했다.)	1
-wither	시들다. 쇠퇴하다. 쇠약해지다 	She could see her beauty withering away. (그녀는 자신의 아름다움이 시들어 가는 것을 알 수 있었다.)	1
-savor	맛, 풍미, 향기, 맛이 나다. 기미가 있다. 	His opinion savors of dogmatism. (그의 견해는 일방적인 경향이 있다.)	1
-solicit	간청하다. 졸라대다. 부탁하다 	We solicit favors of you. (애호해 주시기 바랍니다.)	1
-poll	투표, 투표 결과, 투표하다 	The chairman will declare the poll. (의장이 투표 결과를 발표할 것이다.)	1
-emphasis	중점. 강조 	Some schools lay special emphasis on language. (어떤 학교들은 어학에 특별히 중점을 둔다.)	1
-translation	번역 	The translation was true to the original. (그 번역은 원문에 충실했다.)	1
-paramount	최고의 	This is a matter of paramount importance. (이것은 가장 중요한 일이다.)	1
-realtor	부동산 중개인 	Mr. Nick is a realtor. (닉씨는 부동산 중개인입니다.)	1
-update	새롭게 하다. 최신의 것으로 하다 	I brought a updated dictionary. (나는 최신의 사전을 샀다.)	1
-treaty	조약 	The president of the company signed the treaty. (회사의 사장은 그 조약에 서명했다.)	1
-monetary system	화폐 제도 	Modern technology is remarking the monetary system. (현대 기술은 화폐제도를 다시 만들고 있다.)	1
-rate	요금 	Telephone rates are cheaper at night. (전화요금은 밤에 더 싸다.)	1
-sanction	재가. 인가. 시인. 찬성 	I got a sanction from the author of this book to publish. (나는 이 책 저자로부터 출판 허가를 받았다.)	1
-evacuate(사람을)피난시키다. 철수시키다. 배설하다. 배출하다 	Police evacuated the hospital. (경찰은 사람들을 병원에서 피난시켰다.)	1
-revenue	소득. 수익 ; 고정 수입 	What was the total revenue of our company? (우리 회사의 총 수입이 무엇이었죠?)	1
-lament	슬퍼하다. 비탄하다 	I lament for the death of a friend. (나는 친구의 죽음을 비탄한다.)	1
-eminent	저명한, 유명한 	He is an eminent author of Japan. (그는 일본의 저명한 작가이다.)	1
-clerical	목사의. 성직(자)의 	The pastor wears clerical dress. (저 목사님은 성직 복을 입었다.)	1
-affiliate	가입시키다. 관계를 맺다 	The college is affiliated to the University. (단과대학은 종합대학에 관계되어 있다.)	1
-juvenile	젊은, 어린, 소년(소녀)의 	Juvenile crime is very serious these day. (오늘날 소년 범죄는 아주 심각하다. )	1
-mortgage(양도)저당. 저당잡히기 	The bank lends money on mortgage the house. (은행은 집을 저당 잡고 돈을 빌려준다.)	1
-turnover	반환 	We talked about the turnover of Hong Kong. (우리는 홍콩 반환에 관해서 이야기했다.)	1
-revenue	소득, 수익 	What was the total revenue of our company? (우리 회사의 총수입이 얼마였죠?)	1
-pregnant	임신한, 가득찬 	She is six months pregnant. (그녀는 임신 6개월이다.)	1
-indignant	분개한, 성난 	He was indignant to hear the news. (그는 소식을 듣고 분해했다.)	1
-trade sanction	무역 제재 	The U. S Trade Representative announced trade sanctions to Japan. (미국 무역 대표는 일본에 대해 무역 제재를 발표했다.)	1
-deficit	적자 	Our trade deficit went up last quarter. (우리의 무역 적자가 지난 분기에 올라갔다.)	1
-moment	순간. 찰나 → momentary	순간의 	Don't waste your time seeking after momentary joys. (순간적인 기쁨을 위해 당신의 시간을 낭비하지 마세요.)	1
-opponent	상대. 적 	Never take an unfair advantage of your opponent's weakness. (상대의 약점을 이용하지 말아라.)	1
-modesty	겸손. 조심성 	Everybody knows her modesty. (모든 사람이 그녀의 겸손함을 알고 있다.)	1
-merge	합병하다. 합체시키다. 	The two companies were merged in the new company. (이 두 회사는 합동하여 새 회사를 만들었다.)

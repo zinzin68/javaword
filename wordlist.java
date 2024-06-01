@@ -16,8 +16,7 @@ public class wordlist {
         File[] list = dir.listFiles();
 
         for (int i=0 ; i<list.length ; i++) cnt++;
-        System.out.println(list[0]);
-        System.out.println(list[1]);
+        for (int j=0 ; j<cnt ; j++)  System.out.println(list[j]);
 
         String[][] word;
         String[][] mean;
@@ -26,6 +25,7 @@ public class wordlist {
         System.out.println("number of list " + cnt);
         System.out.println("Select word file");
         int selec = sc.nextInt();
+        sc.close();
 
 		File wordlist = new File(dir_path+"/"+selec+".txt");
         String[] splitedStr = null;
@@ -33,31 +33,38 @@ public class wordlist {
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(wordlist),"UTF-8"))){
             String line = null;
             splitedStr = null;
+            int linecnt =0;
+
+            BufferedReader fileline = new BufferedReader(new InputStreamReader(new FileInputStream(wordlist),"UTF-8"));
+            while(fileline.readLine()!=null) linecnt++;
+            fileline.close();
+           
+            word= new String[cnt][linecnt];
+            mean = new String[cnt][linecnt];
+            example = new String[cnt][linecnt];
+
+            int j =0;
 
             while ((line = reader.readLine())!=null){
                 splitedStr = null;
                 splitedStr = line.split("\t"); 
-                int num = splitedStr.length;
-
-                word= new String[cnt][num];
-                mean = new String[cnt][num];
-                example = new String[cnt][num];
 
                 for (int i=0; i<splitedStr.length ; i++){
-                    if (i%4 == 0) word[selec][i] = splitedStr[i].trim(); System.out.print(word[selec][i]+" ");
-                    if (i%4 == 1) mean[selec][i] = splitedStr[i].trim(); System.out.print(mean[selec][i]+" ");
-                    if (i%4 == 2) example[selec][i] = splitedStr[i].trim(); System.out.print(example[selec][i]+" ");
-                    if (i%4==3) System.out.println();
+                    splitedStr[i] = splitedStr[i].trim();
                 }
-                for (int i=0; i<splitedStr.length ; i++){
-                    System.out.println(word[selec][i]);     
-                }
+                word[selec][j] = splitedStr[0];
+                System.out.println("word["+selec+"]["+(j +1)+"] : " + word[selec][j]);
+                mean[selec][j] = splitedStr[1];
+                System.out.println("mean : "+mean[selec][j]);
+                //example[selec][j] = splitedStr[2];
+                //System.out.println("example : "+example[selec][j]);
+                j++;
             }
-
+            for (int i=0 ; i< word.length ; i++){
+            System.out.println("word[" +selec+ "]["+(i+1)+"] : " + word[selec][i]);}
         }catch(IOException e){
             e.printStackTrace();
         }
-        
 	}
 
 }
