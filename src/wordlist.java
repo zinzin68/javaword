@@ -10,6 +10,7 @@ public class wordlist {
 	
     static String[][] word;
     static String[][] mean;
+    static int selec;
 
 	public static void main(String args[]){
         String dir_path = "./wordlist"; 
@@ -27,7 +28,7 @@ public class wordlist {
 
         System.out.println("number of list " + cnt);
         System.out.println("Select word file");
-        int selec = sc.nextInt();
+        selec = sc.nextInt();
         sc.close();
 
 		File wordlist = new File(dir_path+"/"+selec+".txt");
