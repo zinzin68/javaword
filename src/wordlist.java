@@ -1,3 +1,4 @@
+package src;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,20 +8,22 @@ import java.util.*;
 
 public class wordlist {
 	
+    static String[][] word;
+    static String[][] mean;
+
 	public static void main(String args[]){
         String dir_path = "./wordlist"; 
         int cnt = 0;
         Scanner sc = new Scanner(System.in);
-;
+
         File dir = new File(dir_path);
         File[] list = dir.listFiles();
 
         for (int i=0 ; i<list.length ; i++) cnt++;
         for (int j=0 ; j<cnt ; j++)  System.out.println(list[j]);
 
-        String[][] word;
-        String[][] mean;
-        String[][] example;
+        
+        //String[][] example;
 
         System.out.println("number of list " + cnt);
         System.out.println("Select word file");
@@ -41,7 +44,7 @@ public class wordlist {
            
             word= new String[cnt][linecnt];
             mean = new String[cnt][linecnt];
-            example = new String[cnt][linecnt];
+            //example = new String[cnt][linecnt];
 
             int j =0;
 
@@ -60,11 +63,10 @@ public class wordlist {
                 //System.out.println("example : "+example[selec][j]);
                 j++;
             }
-            for (int i=0 ; i< word.length ; i++){
-            System.out.println("word[" +selec+ "]["+(i+1)+"] : " + word[selec][i]);}
         }catch(IOException e){
             e.printStackTrace();
         }
+        for (int i=0 ; i< word.length ; i++){
+            System.out.println("word[" +selec+ "]["+(i+1)+"] : " + word[selec][i]);}
 	}
-
 }
