@@ -1,16 +1,16 @@
 package src;
-import javax.swing.*;
+//import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-import javax.swing.BorderFactory;
+//import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
+//import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 public class MainScreen extends JFrame {
@@ -80,6 +80,6 @@ public class MainScreen extends JFrame {
         setVisible(true);
     }
     public static void main(String[] args) {
-        MainScreen g= new MainScreen();
+        new MainScreen();
     }
 }

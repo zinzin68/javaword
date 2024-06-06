@@ -11,17 +11,19 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import javax.swing.JScrollPane;
+//import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class MemScreen extends JFrame {
+public class MemScreen extends JFrame implements ActionListener{
     JLabel word, mean, la1, la2;
     JTextField id;
     JPasswordField passwd;
     JPanel printPanel,idPanel,Header,btnPanel;
     JButton btn1, btn2, btn3, bfbtn;
     JTextArea content;
+
+    int i =0;
 
     public MemScreen() {
         super("MemScreen");
@@ -31,7 +33,7 @@ public class MemScreen extends JFrame {
         Header = new JPanel();
         printPanel = new JPanel(new BorderLayout(20,30));
 
-        bfbtn = new JButton("뒤로가기");
+        bfbtn = new JButton("암기 종료");
         Header.add(bfbtn);
         Header.setLocation(0,0);
 
@@ -66,12 +68,8 @@ public class MemScreen extends JFrame {
         btnPanel.add(btn3);
         btnPanel.setBorder(BorderFactory.createEmptyBorder(0,0,50,0));
 
-        bfbtn.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e){
-                new MainScreen();
-                setVisible(false);
-            }
-        });
+        btn1.addActionListener(this);
+        bfbtn.addActionListener(this);
 
         this.add(Header,BorderLayout.NORTH);
         this.add(printPanel,BorderLayout.CENTER);
@@ -81,6 +79,24 @@ public class MemScreen extends JFrame {
         setVisible(true);
     }
     public static void main(String[] args) {
-        MemScreen g= new MemScreen();
+        new MemScreen();
+    }
+    public void actionPerformed(ActionEvent e){
+        if (e.getSource()==btn1){
+            String w = wordlist.wordview(1, i);
+            System.out.println(w);
+            word.setText(w);
+            i++;
+        }
+        else if (e.getSource()==btn1){
+            String w = wordlist.wordview(1, i);
+            System.out.println(w);
+            word.setText(w);
+            i++;
+        }
+        else if(e.getSource() == bfbtn){
+            new MainScreen();
+            this.setVisible(false);
+        }
     }
 }

@@ -13,7 +13,7 @@ public class wordlist {
     static int selec;
 
 	public static void main(String args[]){
-        String dir_path = "./wordlist"; 
+        String dir_path = "./words"; 
         int cnt = 0;
 
         File dir = new File(dir_path);
@@ -26,15 +26,15 @@ public class wordlist {
         
         selec = SelecList();
 
-		File wordlist = new File(dir_path+"/"+selec+".txt");
+		File words = new File(dir_path+"/"+selec+".txt");
         String[] splitedStr = null;
 
-        try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(wordlist),"UTF-8"))){
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(words),"UTF-8"))){
             String line = null;
             splitedStr = null;
             int linecnt =0;
 
-            BufferedReader fileline = new BufferedReader(new InputStreamReader(new FileInputStream(wordlist),"UTF-8"));
+            BufferedReader fileline = new BufferedReader(new InputStreamReader(new FileInputStream(words),"UTF-8"));
             while(fileline.readLine()!=null) linecnt++;
             fileline.close();
            
@@ -52,9 +52,9 @@ public class wordlist {
                     splitedStr[i] = splitedStr[i].trim();
                 }
                 word[selec][j] = splitedStr[0];
-                System.out.println("word["+selec+"]["+(j +1)+"] : " + word[selec][j]);
+                //System.out.println("word["+selec+"]["+(j +1)+"] : " + word[selec][j]);
                 mean[selec][j] = splitedStr[1];
-                System.out.println("mean : "+mean[selec][j]);
+                //System.out.println("mean : "+mean[selec][j]);
                 //example[selec][j] = splitedStr[2];
                 //System.out.println("example : "+example[selec][j]);
                 j++;
@@ -62,18 +62,35 @@ public class wordlist {
         }catch(IOException e){
             e.printStackTrace();
         }
-        for (int i=0 ; i< word.length ; i++){
-            System.out.println("word[" +selec+ "]["+(i+1)+"] : " + word[selec][i]);}
+        for (int i=0 ; i< word[selec].length ; i++){
+           wordview(selec, i);
+           meanview(selec, i); }
 	}
-}
 
-public int SelecList(){
-    int num;
-    Scanner sc = new Scanner(System.in);
+    public static int SelecList(){
+        int num;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Select word file");
+        num = sc.nextInt();
+        sc.close();
     
-    System.out.println("Select word file");
-    num = sc.nextInt();
-    sc.close();
+        return num;
+    }
 
-    return num;
+    public static String wordview(int sel,int n){
+        String w = word[sel][n];
+        System.out.println(w+"\n");
+        return w;
+    }
+
+    public static String meanview(int sel,int n){
+        String m = mean[sel][n];
+        System.out.println(m+"\n");
+        return m;
+    }
+
+    public static File Filelist(){
+        
+    }
 }
