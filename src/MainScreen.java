@@ -75,7 +75,7 @@ public class MainScreen extends JFrame {
             }
         });
         
-        setSize(300,300);
+        setSize(300,600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }

@@ -1,4 +1,6 @@
 package src;
+
+import wordlist.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

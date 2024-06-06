@@ -15,7 +15,6 @@ public class wordlist {
 	public static void main(String args[]){
         String dir_path = "./wordlist"; 
         int cnt = 0;
-        Scanner sc = new Scanner(System.in);
 
         File dir = new File(dir_path);
         File[] list = dir.listFiles();
@@ -23,13 +22,9 @@ public class wordlist {
         for (int i=0 ; i<list.length ; i++) cnt++;
         for (int j=0 ; j<cnt ; j++)  System.out.println(list[j]);
 
-        
-        //String[][] example;
-
         System.out.println("number of list " + cnt);
-        System.out.println("Select word file");
-        selec = sc.nextInt();
-        sc.close();
+        
+        selec = SelecList();
 
 		File wordlist = new File(dir_path+"/"+selec+".txt");
         String[] splitedStr = null;
@@ -70,4 +65,15 @@ public class wordlist {
         for (int i=0 ; i< word.length ; i++){
             System.out.println("word[" +selec+ "]["+(i+1)+"] : " + word[selec][i]);}
 	}
+}
+
+public int SelecList(){
+    int num;
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Select word file");
+    num = sc.nextInt();
+    sc.close();
+
+    return num;
 }
