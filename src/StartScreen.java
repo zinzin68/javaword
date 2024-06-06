@@ -35,7 +35,14 @@ public class StartScreen extends JFrame {
         title.add(Title);
 
         this.add(title,BorderLayout.CENTER);
-        this.add(button,BorderLayout.SOUTH);        
+        this.add(button,BorderLayout.SOUTH);
+        
+        start.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                new MainScreen();
+                setVisible(false);
+            }
+        });
         
         setSize(300,300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

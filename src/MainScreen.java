@@ -61,6 +61,19 @@ public class MainScreen extends JFrame {
 
         this.add(printPanel,BorderLayout.NORTH);
         this.add(listPanel,BorderLayout.CENTER);
+
+        list1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                new MemScreen();
+                setVisible(false);
+            }
+        });
+        list2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                new MemScreen();
+                setVisible(false);
+            }
+        });
         
         setSize(300,300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

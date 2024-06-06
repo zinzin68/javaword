@@ -64,6 +64,13 @@ public class MemScreen extends JFrame {
         btnPanel.add(btn3);
         btnPanel.setBorder(BorderFactory.createEmptyBorder(0,0,50,0));
 
+        bfbtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e){
+                new MainScreen();
+                setVisible(false);
+            }
+        });
+
         this.add(Header,BorderLayout.NORTH);
         this.add(printPanel,BorderLayout.CENTER);
         this.add(btnPanel,BorderLayout.SOUTH);
