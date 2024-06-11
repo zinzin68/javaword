@@ -17,7 +17,7 @@ public class MainScreen extends JFrame {
     JLabel word, mean, la1, la2;
     JTextField id;
     JPasswordField passwd;
-    JPanel printPanel,listPanel,btnPanel;
+    JPanel printPanel,listPanel,btnPanel1,btnPanel2;
     JButton btn1, btn2, btn3;
     JButton list1, list2;
     JScrollPane wordlist;
@@ -26,7 +26,7 @@ public class MainScreen extends JFrame {
         super("Main Screen");
         setLayout(new BorderLayout(10,20));
         
-        listPanel = new JPanel(new FlowLayout(10));
+        listPanel = new JPanel(new FlowLayout(FlowLayout.CENTER,300,50));
         printPanel = new JPanel(new BorderLayout(30,30));
 
         word = new JLabel("오늘의 단어");
@@ -52,6 +52,14 @@ public class MainScreen extends JFrame {
 
         list1 = new JButton("단어장 1");
         list2 = new JButton("단어장 2");
+
+        list1.setPreferredSize(new Dimension(200,50));
+        list2.setPreferredSize(new Dimension(200,50));
+
+        //btnPanel1 = new JPanel();
+        //btnPanel1.add(list1);
+        //btnPanel2 = new JPanel();
+        //btnPanel2.add(list2);
         
         listPanel.add(list1);
         listPanel.add(list2);
@@ -74,8 +82,13 @@ public class MainScreen extends JFrame {
                 setVisible(false);
             }
         });
+
+        word.setFont(new Font("나눔고딕", Font.BOLD,15));
+        mean.setFont(new Font("나눔고딕", Font.BOLD,15));
+        list1.setFont(new Font("나눔고딕", Font.BOLD,15));
+        list2.setFont(new Font("나눔고딕", Font.BOLD,15));
         
-        setSize(300,600);
+        setSize(350,550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
