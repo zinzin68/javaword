@@ -8,10 +8,11 @@ import java.util.*;
 
 public class wordlist {
 	
-    static String[][] word;
-    static String[][] mean;
+    static String[] word;
+    static String[] mean;
+    static int selec;
 
-    public static File getFile(){
+    public static void getFile (int selec){
         String dir_path = "./words"; 
         int cnt = 0;
 
@@ -21,9 +22,40 @@ public class wordlist {
         for (int i=0 ; i<list.length ; i++) cnt++;
         for (int j=0 ; j<cnt ; j++)  System.out.println(list[j]);
         
-        int selec = SelecList();
 		File words = new File(dir_path+"/"+selec+".txt");
-        return words;
+
+        String[] splitedStr = null;
+
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(words),"UTF-8"))){
+            String line = null;
+            splitedStr = null;
+            int linecnt =0;
+
+            BufferedReader fileline = new BufferedReader(new InputStreamReader(new FileInputStream(words),"UTF-8"));
+            while(fileline.readLine()!=null) linecnt++;
+            fileline.close();
+           
+            word= new String[linecnt];
+            mean = new String[linecnt];
+
+            int j =0;
+
+            while ((line = reader.readLine())!=null){
+                splitedStr = null;
+                splitedStr = line.split("\t"); 
+
+                for (int i=0; i<splitedStr.length ; i++){
+                    splitedStr[i] = splitedStr[i].trim();
+                }
+                word[j] = splitedStr[0];
+                mean[j] = splitedStr[1];
+
+                j++;
+            }
+        }catch(IOException e){
+            e.printStackTrace();
+        }
+        print();
     }
 
     public static int SelecList(){
@@ -37,20 +69,8 @@ public class wordlist {
         return num;
     }
 
-    public static String wordview(int sel,int n){
-        String w = word[sel][n];
-        System.out.println(w+"\n");
-        return w;
-    }
-
-    public static String meanview(int sel,int n){
-        String m = mean[sel][n];
-        System.out.println(m+"\n");
-        return m;
-    }
-
 	public static void main(String args[]){
-        String dir_path = "./words"; 
+        /*String dir_path = "./words"; 
         int cnt = 0;
 
         File dir = new File(dir_path);
@@ -62,8 +82,8 @@ public class wordlist {
         System.out.println("number of list " + cnt);
         
         int selec = SelecList();
-
-		File words = new File(dir_path+"/"+selec+".txt");
+        int n = SelecList();
+		File words = getFile(n);
         String[] splitedStr = null;
 
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(words),"UTF-8"))){
@@ -75,9 +95,8 @@ public class wordlist {
             while(fileline.readLine()!=null) linecnt++;
             fileline.close();
            
-            word= new String[cnt][linecnt];
-            mean = new String[cnt][linecnt];
-            //example = new String[cnt][linecnt];
+            word= new String[linecnt];
+            mean = new String[linecnt];
 
             int j =0;
 
@@ -88,17 +107,27 @@ public class wordlist {
                 for (int i=0; i<splitedStr.length ; i++){
                     splitedStr[i] = splitedStr[i].trim();
                 }
-                word[selec][j] = splitedStr[0];
-                mean[selec][j] = splitedStr[1];
+                word[j] = splitedStr[0];
+                mean[j] = splitedStr[1];
 
                 j++;
             }
         }catch(IOException e){
             e.printStackTrace();
         }
-        for (int i=0 ; i< word[selec].length ; i++){
-           wordview(selec, i);
-           meanview(selec, i); }
-	}
-    
+        print();*/
+	} 
+    public static void print(){
+        for(int i = 0; i<word.length; i++){
+            System.out.println(word[i]);
+            System.out.println(mean[i]);}
+    }   
+
+    public String[] wordView(){
+        return word;
+    }
+
+    public String[] meanView(){
+        return mean;
+    }
 }

@@ -13,6 +13,8 @@ import javax.swing.JScrollPane;
 //import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import src.wordlist;
+
 public class MainScreen extends JFrame {
     JLabel word, mean, la1, la2;
     JTextField id;
@@ -21,6 +23,8 @@ public class MainScreen extends JFrame {
     JButton btn1, btn2, btn3;
     JButton list1, list2;
     JScrollPane wordlist;
+
+    static int select;
 
     public MainScreen() {
         super("Main Screen");
@@ -38,29 +42,12 @@ public class MainScreen extends JFrame {
         printPanel.add(word,BorderLayout.CENTER);
         printPanel.add(mean,BorderLayout.SOUTH);
 
-        /*la1 = new JLabel("아이디 : ");
-        la2 = new JLabel("비밀번호 : ");
-        id = new JTextField(15);
-        passwd = new JPasswordField(15);
-        passwd.setEchoChar('*'); 
-
-        idPanel.add(la1);
-        idPanel.add(id);
-        passPanel.add(la2);
-        passPanel.add(passwd);*/
-        
-
         list1 = new JButton("단어장 1");
         list2 = new JButton("단어장 2");
 
         list1.setPreferredSize(new Dimension(200,50));
         list2.setPreferredSize(new Dimension(200,50));
-
-        //btnPanel1 = new JPanel();
-        //btnPanel1.add(list1);
-        //btnPanel2 = new JPanel();
-        //btnPanel2.add(list2);
-        
+       
         listPanel.add(list1);
         listPanel.add(list2);
 
@@ -72,12 +59,15 @@ public class MainScreen extends JFrame {
 
         list1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
+                select = 1;
                 new MemScreen();
                 setVisible(false);
+
             }
         });
         list2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e){
+                select = 2;
                 new MemScreen();
                 setVisible(false);
             }
@@ -92,6 +82,11 @@ public class MainScreen extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
+
+    public int setList(){
+        return select;
+    }
+
     public static void main(String[] args) {
         new MainScreen();
     }

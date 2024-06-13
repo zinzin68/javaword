@@ -12,22 +12,30 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 //import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.JTextField;
-
-//import words.*;
+import src.MainScreen;
+import src.wordlist;
 
 public class MemScreen extends JFrame implements ActionListener{
-    JLabel word, mean, la1, la2;
-    JTextField id;
+    JLabel word, mean, now, total;
     JPasswordField passwd;
     JPanel printPanel,idPanel,Header,btnPanel;
     JButton btn1, btn2, btn3, bfbtn;
     JTextArea content;
+    MainScreen ms = new MainScreen();
+    wordlist wl = new wordlist();
+    String[] w, m;
 
     static int i =0;
 
     public MemScreen() {
         super("MemScreen");
+        ms.setVisible(false);
+
+        int x = ms.setList();
+        wl.getFile(x);
+        w = wl.wordView();
+        m = wl.meanView();
+
         setLayout(new BorderLayout(30,20));
         
         idPanel = new JPanel();
@@ -40,6 +48,10 @@ public class MemScreen extends JFrame implements ActionListener{
 
         word = new JLabel("단어");
         mean = new JLabel("단어 뜻");
+        String nowi = String.valueOf(i);
+        String stotal = String.valueOf(w.length);
+        now = new JLabel(nowi+"/"+stotal);
+
         mean.setVisible(false);
         
         word.setHorizontalAlignment(JLabel.CENTER);
@@ -47,6 +59,7 @@ public class MemScreen extends JFrame implements ActionListener{
 
         printPanel.add(word,BorderLayout.CENTER);
         printPanel.add(mean,BorderLayout.SOUTH);
+        printPanel.add(now,BorderLayout.NORTH);
         
         btn1 = new JButton("다 외움");
         btn2 = new JButton("뜻 확인");
@@ -89,18 +102,22 @@ public class MemScreen extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e){
         if (e.getSource()==btn1){
-            //String w = wordlist.wordview(1, i);
-            //System.out.println(w);
-            //word.setText("ok next");
+            if (i>=w.length) i=0;
+            String setM = m[i];
+            String setW = w[i];
+            word.setText(setW);
+            mean.setText(setM);
             mean.setVisible(false);
-            //i++;
+            i++;
         }
         else if (e.getSource()==btn3){
-            //String w = wordlist.wordview(1, i);
-            //System.out.println(w);
-            //word.setText("next");
+            if (i>=w.length) i=0;
+            String setM = m[i];
+            String setW = w[i];
+            word.setText(setW);
+            mean.setText(setM);
             mean.setVisible(false);
-            //i++;
+            i++;
         }
         else if(e.getSource() == btn2){
             mean.setVisible(true);
