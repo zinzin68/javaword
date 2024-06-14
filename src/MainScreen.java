@@ -2,6 +2,7 @@ package src;
 //import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
 //import java.io.File;
 import java.util.Random;
 
@@ -24,18 +25,26 @@ public class MainScreen extends JFrame {
     JScrollPane listOfword;
     //wordlist wl;
 
-    static int cnt,f,n;
+    int cnt,f,n;
     Random rnd = new Random();
     static int select;
     String todayword, todaymean;
     
     public void filecnt(){
-        wordlist.main(null);
-        cnt = wordlist.totalList();
+        String dir_path = "./words"; 
+        cnt = 0;
+
+        File dir = new File(dir_path);
+        File[] list = dir.listFiles();
+
+        for (int i=0 ; i<list.length ; i++) cnt++;
     }
 
     public String getwlist(){
-        f = rnd.nextInt(wordlist.totalList())+1;
+        filecnt();
+        if (cnt >=0) {
+            f = rnd.nextInt(cnt)+1;
+        }        
         wordlist.getFile(f);
         String[] w = wordlist.wordView();
         n = rnd.nextInt(w.length);

@@ -13,17 +13,16 @@ public class wordlist {
     private static String dir_path = "./words";
 
     public static void getFile (int selec){
-        /*String dir_path = "./words"; 
         cnt = 0;
 
         File dir = new File(dir_path);
         File[] list = dir.listFiles();
 
-        for (int i=0 ; i<list.length ; i++) cnt++;   */
+        for (int i=0 ; i<list.length ; i++) cnt++;
         
 		File words = new File(dir_path+"/"+selec+".txt");
 
-        String[] splitedStr;// = null;
+        String[] splitedStr = null;
 
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(words),"UTF-8"))){
             String line = null;
@@ -52,14 +51,9 @@ public class wordlist {
         }catch(IOException e){
             e.printStackTrace();
         }
+
     }
 	public static void main(String[] args){
-        cnt = 0;
-
-        File dir = new File(dir_path);
-        File[] list = dir.listFiles();
-
-        for (int i=0 ; i<list.length ; i++) cnt++;   
 	} 
 
     public static void print(){

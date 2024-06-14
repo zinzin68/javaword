@@ -50,9 +50,9 @@ public class MemScreen extends JFrame implements ActionListener{
 
         word = new JLabel(w[0]);
         mean = new JLabel(m[0]);
-        nowi = String.valueOf(i);
+        nowi = String.valueOf(i+1);
         stotal = String.valueOf(w.length);
-        now = new JLabel((nowi+1)+"/"+stotal);
+        now = new JLabel(nowi+"/"+stotal);
 
         mean.setVisible(false);
         
@@ -62,7 +62,7 @@ public class MemScreen extends JFrame implements ActionListener{
 
         printPanel.add(word,BorderLayout.CENTER);
         printPanel.add(mean,BorderLayout.SOUTH);
-        Header.add(now,BorderLayout.NORTH);
+        printPanel.add(now,BorderLayout.NORTH);
         
         btn1 = new JButton("이전 단어");
         btn2 = new JButton("뜻 확인");
@@ -93,6 +93,7 @@ public class MemScreen extends JFrame implements ActionListener{
         btn1.setFont(new Font("나눔고딕", Font.BOLD,15));
         btn2.setFont(new Font("나눔고딕", Font.BOLD,15));
         btn3.setFont(new Font("나눔고딕", Font.BOLD,15));
+        now.setFont(new Font("나눔고딕", Font.BOLD,15));
 
         setSize(350,550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -135,7 +136,7 @@ public class MemScreen extends JFrame implements ActionListener{
                 }
             }
             if (i>=0)i++;
-            nowi = String.valueOf(i);
+            nowi = String.valueOf(i+1);
             now.setText(nowi+"/"+stotal);
             String setM = m[i];
             String setW = w[i];
