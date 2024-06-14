@@ -4,27 +4,26 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
 
 public class wordlist {
 	
-    static String[] word;
-    static String[] mean;
-    static int selec;
+    private static String[] word;
+    private static String[] mean;
+    private static int cnt;
+    private static String dir_path = "./words";
 
     public static void getFile (int selec){
-        String dir_path = "./words"; 
-        int cnt = 0;
+        /*String dir_path = "./words"; 
+        cnt = 0;
 
         File dir = new File(dir_path);
         File[] list = dir.listFiles();
 
-        for (int i=0 ; i<list.length ; i++) cnt++;
-        //for (int j=0 ; j<cnt ; j++)  System.out.println(list[j]);
+        for (int i=0 ; i<list.length ; i++) cnt++;   */
         
 		File words = new File(dir_path+"/"+selec+".txt");
 
-        String[] splitedStr = null;
+        String[] splitedStr;// = null;
 
         try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(words),"UTF-8"))){
             String line = null;
@@ -37,7 +36,6 @@ public class wordlist {
            
             word= new String[linecnt];
             mean = new String[linecnt];
-
             int j =0;
 
             while ((line = reader.readLine())!=null){
@@ -49,26 +47,36 @@ public class wordlist {
                 }
                 word[j] = splitedStr[0];
                 mean[j] = splitedStr[1];
-
                 j++;
             }
         }catch(IOException e){
             e.printStackTrace();
         }
     }
-	public static void main(String args[]){
+	public static void main(String[] args){
+        cnt = 0;
+
+        File dir = new File(dir_path);
+        File[] list = dir.listFiles();
+
+        for (int i=0 ; i<list.length ; i++) cnt++;   
 	} 
+
     public static void print(){
         for(int i = 0; i<word.length; i++){
             System.out.println(word[i]);
             System.out.println(mean[i]);}
     }   
 
-    public String[] wordView(){
+    public static int totalList(){
+        return cnt;
+    }
+
+    public static String[] wordView(){
         return word;
     }
 
-    public String[] meanView(){
+    public static String[] meanView(){
         return mean;
     }
 }

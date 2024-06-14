@@ -2,7 +2,7 @@ package src;
 //import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.File;
+//import java.io.File;
 import java.util.Random;
 
 //import javax.swing.BorderFactory;
@@ -10,48 +10,40 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
+//import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
 //import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import src.wordlist;
+//import javax.swing.JTextField;
+//import src.wordlist;
 
 public class MainScreen extends JFrame {
     JLabel word, mean, la1, la2;
-    JTextField id;
-    JPasswordField passwd;
     JPanel printPanel,listPanel,btnPanel1,btnPanel2;
     JButton btn1, btn2, btn3;
-    JButton list1, list2, list3, list4;
-    JScrollPane wordlist;
-    wordlist wl = new wordlist();
+    JButton list1, list2, list3, list4, list5;
+    JScrollPane listOfword;
+    //wordlist wl;
 
     static int cnt,f,n;
     Random rnd = new Random();
     static int select;
+    String todayword, todaymean;
     
     public void filecnt(){
-        String dir_path = "./words"; 
-        int cnt = 0;
-
-        File dir = new File(dir_path);
-        File[] list = dir.listFiles();
-
-        for (int i=0 ; i<list.length ; i++) cnt++;
-        this.cnt = cnt;
+        wordlist.main(null);
+        cnt = wordlist.totalList();
     }
 
     public String getwlist(){
-        f = rnd.nextInt(2);
-        wl.getFile(f+1);
-        String[] w = wl.wordView();
+        f = rnd.nextInt(wordlist.totalList())+1;
+        wordlist.getFile(f);
+        String[] w = wordlist.wordView();
         n = rnd.nextInt(w.length);
         return w[n];
-
     }
     public String getmlist(){
-        wl.getFile(f+1);
-        String[] m = wl.meanView();
+        wordlist.getFile(f);
+        String[] m = wordlist.meanView();
         return m[n];
     }
 
@@ -62,8 +54,8 @@ public class MainScreen extends JFrame {
         listPanel = new JPanel(new FlowLayout(FlowLayout.CENTER,300,40));
         printPanel = new JPanel(new BorderLayout(30,30));
 
-        String todayword = getwlist();
-        String todaymean = getmlist();
+        todayword = getwlist();
+        todaymean = getmlist();
         word = new JLabel(todayword);
         mean = new JLabel(todaymean);
         
@@ -77,18 +69,21 @@ public class MainScreen extends JFrame {
         list2 = new JButton("단어장 2");
         list3 = new JButton("단어장 3");
         list4 = new JButton("단어장 4");
+        list5 = new JButton("단어장 5");
 
         list1.setPreferredSize(new Dimension(200,50));
         list2.setPreferredSize(new Dimension(200,50));
         list3.setPreferredSize(new Dimension(200,50));
         list4.setPreferredSize(new Dimension(200,50));
+        list5.setPreferredSize(new Dimension(200,50));
        
         listPanel.add(list1);
         listPanel.add(list2);
         listPanel.add(list3);
         listPanel.add(list4);
+        listPanel.add(list5);
 
-        wordlist = new JScrollPane(listPanel,JScrollPane.VERTICAL_SCROLLBAR_NEVER, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+        listOfword = new JScrollPane(listPanel,JScrollPane.VERTICAL_SCROLLBAR_NEVER, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
            // 스크롤 생김
 
         this.add(printPanel,BorderLayout.NORTH);

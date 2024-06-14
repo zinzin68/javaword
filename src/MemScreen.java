@@ -11,10 +11,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
-import src.MainScreen;
-import src.wordlist;
+//import src.MainScreen;
+//import src.wordlist;
 
 public class MemScreen extends JFrame implements ActionListener{
     JLabel word, mean, now, total;
@@ -23,7 +23,7 @@ public class MemScreen extends JFrame implements ActionListener{
     JButton btn1, btn2, btn3, bfbtn;
     JTextArea content;
     MainScreen ms = new MainScreen();
-    wordlist wl = new wordlist();
+    //wordlist wl = new wordlist();
     String[] w, m;
     String nowi, stotal;
 
@@ -34,9 +34,9 @@ public class MemScreen extends JFrame implements ActionListener{
         ms.setVisible(false);
 
         int x = ms.setList();
-        wl.getFile(x);
-        w = wl.wordView();
-        m = wl.meanView();
+        wordlist.getFile(x);
+        w = wordlist.wordView();
+        m = wordlist.meanView();
 
         setLayout(new BorderLayout(30,20));
         
@@ -125,10 +125,11 @@ public class MemScreen extends JFrame implements ActionListener{
             mean.setVisible(false); 
         }
         else if (e.getSource()==btn3){
+            String[] options={"처음으로","끝내기"};
             if (i>=w.length) {
-                int option = JOptionPane.showConfirmDialog(this, "마지막 단어입니다 \n 처음으로 돌아갈까요?","",JOptionPane.YES_NO_OPTION );
-                if(option == 0) i=0;
-                else if (option == 1){
+                int option = JOptionPane.showOptionDialog(this, "마지막 단어입니다 \n 처음으로 돌아갈까요?","",JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE, null, options, options[0] );
+                if(option == JOptionPane.YES_OPTION ) i=0;
+                else if (option == JOptionPane.NO_OPTION){
                     new MainScreen();
                     this.setVisible(false);
                 }
