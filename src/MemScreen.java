@@ -62,7 +62,7 @@ public class MemScreen extends JFrame implements ActionListener{
 
         printPanel.add(word,BorderLayout.CENTER);
         printPanel.add(mean,BorderLayout.SOUTH);
-        printPanel.add(now,BorderLayout.NORTH);
+        Header.add(now,BorderLayout.NORTH);
         
         btn1 = new JButton("이전 단어");
         btn2 = new JButton("뜻 확인");
@@ -99,14 +99,14 @@ public class MemScreen extends JFrame implements ActionListener{
         setVisible(true);
     }
 
-    public void memCon(){
+    /*public void memCon(){
         int option = JOptionPane.showConfirmDialog(this, "마지막 단어입니다","",JOptionPane.YES_NO_OPTION );
         if(option == 0) i=0;
         else if (option == 1){
             new MainScreen();
             this.setVisible(false);
         }
-    }
+    }*/
 
     public static void main(String[] args) {
         new MemScreen();
@@ -125,7 +125,14 @@ public class MemScreen extends JFrame implements ActionListener{
             mean.setVisible(false); 
         }
         else if (e.getSource()==btn3){
-            if (i>=w.length) memCon();
+            if (i>=w.length) {
+                int option = JOptionPane.showConfirmDialog(this, "마지막 단어입니다 \n 처음으로 돌아갈까요?","",JOptionPane.YES_NO_OPTION );
+                if(option == 0) i=0;
+                else if (option == 1){
+                    new MainScreen();
+                    this.setVisible(false);
+                }
+            }
             if (i>=0)i++;
             nowi = String.valueOf(i);
             now.setText(nowi+"/"+stotal);

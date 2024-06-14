@@ -57,9 +57,9 @@ public class MainScreen extends JFrame {
 
     public MainScreen() {
         super("Main Screen");
-        setLayout(new BorderLayout(10,20));
+        setLayout(new BorderLayout(10,10));
 
-        listPanel = new JPanel(new FlowLayout(FlowLayout.CENTER,300,50));
+        listPanel = new JPanel(new FlowLayout(FlowLayout.CENTER,300,40));
         printPanel = new JPanel(new BorderLayout(30,30));
 
         String todayword = getwlist();
