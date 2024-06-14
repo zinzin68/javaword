@@ -5,7 +5,7 @@ tranquil	조용한 	He lived a very tranquil life. (그는 조용한 생을 살�
 cherish	소중히 하다 	I cherish my childhood memory. (나는 내 어린 시절의 추억을 소중히 생각한다.)	1
 brief	보고하다 	He will brief you on this tomorrow. (그가 내일 이것에 대해 당신에게 보고할 것입니다.)	1
 dues	세금, 회비, 공과금 	Dues are $10.00 per year for each member of this meeting. (이 모임의 회원은 년간 회비가 10달러이다.)	1
-108.conservancy	관리 위원회, 보존, 관리, 감독 	This meeting is sponsored by the Nature Conservancy. (이 모임은 자연보호 위원회 후원입니다.)	1
+conservancy	관리 위원회, 보존, 관리, 감독 	This meeting is sponsored by the Nature Conservancy. (이 모임은 자연보호 위원회 후원입니다.)	1
 offset	상쇄하다. 보충하다. 보완하다. 	Another line of business can offset losses. (다른 사업망이 그 손실을 보완해 줄 수 있을 것입니다.)	1
 delay	지연시키다 	Construction on the project was delayed. (건설 사업 계획이 연기되었다.)	1
 value	가치 	The current value of property is very low. (재산의 현재 가치는 아주 낮다.)	1

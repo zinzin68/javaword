@@ -8,9 +8,10 @@ import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-//import javax.swing.JScrollPane;
+import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 import src.MainScreen;
 import src.wordlist;
@@ -24,6 +25,7 @@ public class MemScreen extends JFrame implements ActionListener{
     MainScreen ms = new MainScreen();
     wordlist wl = new wordlist();
     String[] w, m;
+    String nowi, stotal;
 
     static int i =0;
 
@@ -46,22 +48,23 @@ public class MemScreen extends JFrame implements ActionListener{
         Header.add(bfbtn);
         Header.setBorder(BorderFactory.createEmptyBorder(0,0,100,0));
 
-        word = new JLabel("단어");
-        mean = new JLabel("단어 뜻");
-        String nowi = String.valueOf(i);
-        String stotal = String.valueOf(w.length);
-        now = new JLabel(nowi+"/"+stotal);
+        word = new JLabel(w[0]);
+        mean = new JLabel(m[0]);
+        nowi = String.valueOf(i);
+        stotal = String.valueOf(w.length);
+        now = new JLabel((nowi+1)+"/"+stotal);
 
         mean.setVisible(false);
         
         word.setHorizontalAlignment(JLabel.CENTER);
         mean.setHorizontalAlignment(JLabel.CENTER);
+        now.setHorizontalAlignment(JLabel.CENTER);
 
         printPanel.add(word,BorderLayout.CENTER);
         printPanel.add(mean,BorderLayout.SOUTH);
         printPanel.add(now,BorderLayout.NORTH);
         
-        btn1 = new JButton("다 외움");
+        btn1 = new JButton("이전 단어");
         btn2 = new JButton("뜻 확인");
         btn3 = new JButton("다음 단어");
 
@@ -95,6 +98,16 @@ public class MemScreen extends JFrame implements ActionListener{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
+
+    public void memCon(){
+        int option = JOptionPane.showConfirmDialog(this, "마지막 단어입니다","",JOptionPane.YES_NO_OPTION );
+        if(option == 0) i=0;
+        else if (option == 1){
+            new MainScreen();
+            this.setVisible(false);
+        }
+    }
+
     public static void main(String[] args) {
         new MemScreen();
     }
@@ -102,22 +115,25 @@ public class MemScreen extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e){
         if (e.getSource()==btn1){
-            if (i>=w.length) i=0;
+            if (i >= 1) i--;
+            nowi = String.valueOf(i+1);
+            now.setText(nowi+"/"+stotal);
             String setM = m[i];
             String setW = w[i];
             word.setText(setW);
             mean.setText(setM);
-            mean.setVisible(false);
-            i++;
+            mean.setVisible(false); 
         }
         else if (e.getSource()==btn3){
-            if (i>=w.length) i=0;
+            if (i>=w.length) memCon();
+            if (i>=0)i++;
+            nowi = String.valueOf(i);
+            now.setText(nowi+"/"+stotal);
             String setM = m[i];
             String setW = w[i];
             word.setText(setW);
             mean.setText(setM);
             mean.setVisible(false);
-            i++;
         }
         else if(e.getSource() == btn2){
             mean.setVisible(true);

@@ -45,6 +45,8 @@ public class StartScreen extends JFrame {
         });
         
         start.setFont(new Font("나눔고딕", Font.BOLD,20));
+        Title.setFont(new Font("나눔고딕", Font.BOLD,20));
+
 
         setSize(350,550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
