@@ -7,23 +7,19 @@ import java.awt.event.*;
 import javax.swing.Action;
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-//import javax.swing.JOptionPane;
-import javax.swing.JTextArea;
-//import src.MainScreen;
-//import src.wordlist;
+
 
 public class MemScreen extends JFrame implements ActionListener{
     JLabel word, mean, now, total;
     JPanel printPanel,idPanel,Header,btnPanel;
     RoundedButton btn1, btn2, btn3, bfbtn;
     MainScreen ms = new MainScreen();
-    //wordlist wl = new wordlist();
     String[] w, m;
     String nowi, stotal;
     Color listc[];
@@ -31,20 +27,21 @@ public class MemScreen extends JFrame implements ActionListener{
     static int i =0;
 
     public MemScreen() {
-        super("MemScreen");
+        super("MyWord");
         ms.setVisible(false);
         this.getContentPane().setBackground(Color.WHITE);
+        setLayout(new BorderLayout(30,20));
+        ImageIcon icon = new ImageIcon("src/icon.png");
+        this.setIconImage(icon.getImage());
 
         i=0;
         int x = ms.setList();
         wordlist.getFile(x);
         w = wordlist.wordView();
         m = wordlist.meanView();
-
-        setLayout(new BorderLayout(30,20));
         
         idPanel = new JPanel();
-        Header = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        Header = new JPanel(new BorderLayout(0,0));
         printPanel = new JPanel(new BorderLayout(0,0));
         
         idPanel.setBackground(Color.WHITE);
@@ -52,33 +49,34 @@ public class MemScreen extends JFrame implements ActionListener{
         printPanel.setBackground(Color.WHITE);
 
         bfbtn = new RoundedButton("암기 종료",new Color(255,255,255),new Color (192,0,0));
-        Header.add(bfbtn);
-        Header.setBorder(BorderFactory.createEmptyBorder(0,0,100,0));
+        Header.add(bfbtn,BorderLayout.WEST);
+        Header.setBorder(BorderFactory.createEmptyBorder(0,0,80,0));
 
         word = new JLabel(w[0]);
         mean = new JLabel(m[0]);
         nowi = String.valueOf(i+1);
         stotal = String.valueOf(w.length);
+
         now = new JLabel(nowi+"/"+stotal);
+        Header.add(now,BorderLayout.SOUTH);
+        now.setHorizontalAlignment(JLabel.CENTER);
 
         mean.setVisible(false);
         
         word.setHorizontalAlignment(JLabel.CENTER);
         mean.setHorizontalAlignment(JLabel.CENTER);
-        now.setHorizontalAlignment(JLabel.CENTER);
 
         printPanel.add(word,BorderLayout.CENTER);
         printPanel.add(mean,BorderLayout.SOUTH);
-        printPanel.add(now,BorderLayout.NORTH);
         
         listc = new Color[3];
         listc[0] = new Color (255,215,179);
         listc[1] = new Color (153,220,225);
         listc[2] = new Color (224,175,205);
 
-        btn1 = new RoundedButton("이전 단어", listc[0] , new Color (0,0,0));
-        btn2 = new RoundedButton("뜻 확인", listc[1],new Color (0,0,0));
-        btn3 = new RoundedButton("다음 단어", listc[2] ,new Color (0,0,0));
+        btn1 = new RoundedButton("이전 단어", listc[0] , Color.BLACK);
+        btn2 = new RoundedButton("뜻 확인", listc[1],Color.BLACK);
+        btn3 = new RoundedButton("다음 단어", listc[2] ,Color.BLACK);
 
         btn1.setPreferredSize(new Dimension(100,40));
         btn2.setPreferredSize(new Dimension(100,40));
@@ -90,6 +88,7 @@ public class MemScreen extends JFrame implements ActionListener{
         btnPanel.add(btn2);
         btnPanel.add(btn3);
         btnPanel.setBorder(BorderFactory.createEmptyBorder(100,0,100,0));
+
         btn1.setBackground(Color.white);
         btn2.setBackground(Color.white);
         btn3.setBackground(Color.white);

@@ -8,8 +8,9 @@ import java.util.Random;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.BoxLayout;
-import javax.swing.ImageIcon;
+
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.Action;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -18,12 +19,11 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 public class MainScreen extends JFrame implements ActionListener {
-    JLabel today, word, mean;
-    JPanel printPanel,listPanel;
-    RoundedButton list[];
+    JLabel today, word, mean;    
+    JPanel printPanel,listPanel, Header;
+    RoundedButton list[], exitbtn;
     JScrollPane listOfword;
     Color listc[];
-    //wordlist wl;
 
     int cnt,f,n;
     Random rnd = new Random();
@@ -59,9 +59,11 @@ public class MainScreen extends JFrame implements ActionListener {
     }
 
     public MainScreen() {
-        super("Main Screen");
+        super("MyWord");
         setLayout(new BorderLayout(10,10));
         this.getContentPane().setBackground(Color.WHITE);
+        ImageIcon icon = new ImageIcon("src/icon.png");
+        setIconImage(icon.getImage());
 
         listPanel = new JPanel();
         listPanel.setLayout(new BoxLayout(listPanel, BoxLayout.Y_AXIS));
@@ -71,6 +73,14 @@ public class MainScreen extends JFrame implements ActionListener {
         printPanel = new JPanel(new BorderLayout(10,10));
         printPanel.setBackground(Color.WHITE);
 
+        Header = new JPanel(new BorderLayout(0,0));
+        Header.setBackground(Color.WHITE);
+        exitbtn = new RoundedButton("종료",Color.white,new Color (192,0,0));
+        exitbtn.addActionListener(this);
+
+        Header.add(exitbtn, BorderLayout.WEST);
+        Header.setBorder(BorderFactory.createEmptyBorder(0,0,0,0));
+        Header.add(printPanel,BorderLayout.SOUTH);
 
         todayword = getwlist();
         todaymean = getmlist();
@@ -86,7 +96,7 @@ public class MainScreen extends JFrame implements ActionListener {
         printPanel.add(word,BorderLayout.CENTER);
         printPanel.add(mean,BorderLayout.SOUTH);
 
-        printPanel.setBorder(BorderFactory.createEmptyBorder(50,0,20,0));
+        printPanel.setBorder(BorderFactory.createEmptyBorder(10,0,20,0));
 
         listc = new Color[3];
         listc[0] = new Color (255,215,179);
@@ -96,7 +106,7 @@ public class MainScreen extends JFrame implements ActionListener {
         list = new RoundedButton[cnt];
 
         for (int i =0 ; i < cnt ; i++){
-            list[i] = new RoundedButton("단어장 "+(i+1), listc[i%3]);
+            list[i] = new RoundedButton("단어장 "+(i+1), listc[i%3],new Color (0,0,0));
             list[i].setPreferredSize(new Dimension(300,60));
             list[i].setMaximumSize(new Dimension(150,60));
             list[i].setMinimumSize(new Dimension(100,60));
@@ -116,9 +126,11 @@ public class MainScreen extends JFrame implements ActionListener {
         listOfword.setBorder(null);
            // 스크롤 생김
 
-        this.add(printPanel,BorderLayout.NORTH);
+        this.add(Header,BorderLayout.NORTH);
         this.add(listOfword,BorderLayout.CENTER);
 
+        exitbtn.setFont(new Font("한컴 말랑말랑 Bold",Font.PLAIN,15));
+        exitbtn.setForeground(Color.RED);
         today.setFont(new Font("한컴 말랑말랑 Bold",Font.PLAIN,15));
         word.setFont(new Font("한컴 말랑말랑 Bold", Font.PLAIN,20));
         mean.setFont(new Font("한컴 말랑말랑 Bold", Font.PLAIN,15));
@@ -145,18 +157,21 @@ public class MainScreen extends JFrame implements ActionListener {
                 setVisible(false);
             }
         }
+        if (e.getSource() == exitbtn){
+            System.exit(0);
+        }
     }
     public class RoundedButton extends JButton {
-        Color c;
+        Color c;//버튼 색
+        Color o;//글자 색
         public RoundedButton() { super(); decorate(); } 
-        public RoundedButton(String text , Color color) { super(text); c=color; decorate(); } 
+        public RoundedButton(String text , Color color, Color textcolor) { super(text); c=color; o = textcolor; decorate(); } 
         public RoundedButton(Action action) { super(action); decorate(); } 
         public RoundedButton(Icon icon) { super(icon); decorate(); } 
         public RoundedButton(String text, Icon icon) { super(text, icon); decorate(); } 
         protected void decorate() { setBorderPainted(false); setOpaque(false); }
         @Override 
         protected void paintComponent(Graphics g) {
-           Color o=new Color(0,0,0); //글자색 결정
            int width = getWidth(); 
            int height = getHeight(); 
            Graphics2D graphics = (Graphics2D) g; 

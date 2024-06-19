@@ -6,26 +6,34 @@ import java.awt.event.*;
 import javax.swing.Action;
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-//import javax.swing.JPasswordField;
-//import javax.swing.JScrollPane;
-//import javax.swing.JTextArea;
-//import javax.swing.JTextField;
 
 public class StartScreen extends JFrame {
-    private JLabel Title;
+    private JLabel Title,cloud;
     private RoundedButton start;
     private JPanel title, button;
+    
 
     public StartScreen() {
-        super("Start Screen");
+        super("MyWord");
         setLayout(new BorderLayout());
         this.getContentPane().setBackground(Color.WHITE);
+        setLayout(new BorderLayout(30,20));
+        ImageIcon icon = new ImageIcon("src/icon.png");
+        setIconImage(icon.getImage());
 
+        cloud = new JLabel();
         title = new JPanel();
+
+        Image img = icon.getImage();
+        Image upimg = img.getScaledInstance(150,66,Image.SCALE_SMOOTH);
+        ImageIcon upicon = new ImageIcon(upimg);
+        
+        cloud.setBackground(Color.WHITE);
         title.setBackground(Color.WHITE);
         button = new JPanel();
         button.setBackground(Color.WHITE);
@@ -33,18 +41,21 @@ public class StartScreen extends JFrame {
         start = new RoundedButton("START",new Color(255,215,179));
         Title = new JLabel("단어장");
 
-        title.setBorder(BorderFactory.createEmptyBorder(150,0,0,0));
+        cloud.setIcon(upicon);
+        cloud.setHorizontalAlignment(JLabel.CENTER);
+
+        cloud.setBorder(BorderFactory.createEmptyBorder(100,0,0,0));
+        title.setBorder(BorderFactory.createEmptyBorder(0,0,0,0));
         button.setBorder(BorderFactory.createEmptyBorder(0,0,150,0));
         
         start.setBackground(Color.white);
         start.setOpaque(false);
         start.setBorder(null);
         start.setPreferredSize(new Dimension(200,50));
-
         
         button.add(start);
         title.add(Title);
-
+        this.add(cloud,BorderLayout.NORTH);
         this.add(title,BorderLayout.CENTER);
         this.add(button,BorderLayout.SOUTH);
         
