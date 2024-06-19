@@ -1,28 +1,28 @@
 package src;
-//import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
-//import java.io.File;
 import java.util.Random;
 
-//import javax.swing.BorderFactory;
+import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.ImageIcon;
+import javax.swing.Icon;
+import javax.swing.Action;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-//import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
-//import javax.swing.JTextArea;
-//import javax.swing.JTextField;
-//import src.wordlist;
 
-public class MainScreen extends JFrame {
-    JLabel word, mean, la1, la2;
-    JPanel printPanel,listPanel,btnPanel1,btnPanel2;
-    JButton btn1, btn2, btn3;
-    JButton list1, list2, list3, list4, list5;
+public class MainScreen extends JFrame implements ActionListener {
+    JLabel today, word, mean;
+    JPanel printPanel,listPanel;
+    RoundedButton list[];
     JScrollPane listOfword;
+    Color listc[];
     //wordlist wl;
 
     int cnt,f,n;
@@ -43,7 +43,9 @@ public class MainScreen extends JFrame {
     public String getwlist(){
         filecnt();
         if (cnt >=0) {
-            f = rnd.nextInt(cnt)+1;
+            do{
+                f = rnd.nextInt()%cnt;
+            }while(f<=0);
         }        
         wordlist.getFile(f);
         String[] w = wordlist.wordView();
@@ -59,80 +61,67 @@ public class MainScreen extends JFrame {
     public MainScreen() {
         super("Main Screen");
         setLayout(new BorderLayout(10,10));
+        this.getContentPane().setBackground(Color.WHITE);
 
-        listPanel = new JPanel(new FlowLayout(FlowLayout.CENTER,300,40));
-        printPanel = new JPanel(new BorderLayout(30,30));
+        listPanel = new JPanel();
+        listPanel.setLayout(new BoxLayout(listPanel, BoxLayout.Y_AXIS));
+        listPanel.setBorder(BorderFactory.createEmptyBorder(30, 0, 0, 0));
+        listPanel.setBackground(Color.WHITE);
+
+        printPanel = new JPanel(new BorderLayout(10,10));
+        printPanel.setBackground(Color.WHITE);
+
 
         todayword = getwlist();
         todaymean = getmlist();
+        today = new JLabel("랜덤 단어");
         word = new JLabel(todayword);
         mean = new JLabel(todaymean);
         
+        today.setHorizontalAlignment(JLabel.CENTER);
         word.setHorizontalAlignment(JLabel.CENTER);
         mean.setHorizontalAlignment(JLabel.CENTER);
 
+        printPanel.add(today,BorderLayout.NORTH);
         printPanel.add(word,BorderLayout.CENTER);
         printPanel.add(mean,BorderLayout.SOUTH);
 
-        list1 = new JButton("단어장 1");
-        list2 = new JButton("단어장 2");
-        list3 = new JButton("단어장 3");
-        list4 = new JButton("단어장 4");
-        list5 = new JButton("단어장 5");
+        printPanel.setBorder(BorderFactory.createEmptyBorder(50,0,20,0));
 
-        list1.setPreferredSize(new Dimension(200,50));
-        list2.setPreferredSize(new Dimension(200,50));
-        list3.setPreferredSize(new Dimension(200,50));
-        list4.setPreferredSize(new Dimension(200,50));
-        list5.setPreferredSize(new Dimension(200,50));
-       
-        listPanel.add(list1);
-        listPanel.add(list2);
-        listPanel.add(list3);
-        listPanel.add(list4);
-        listPanel.add(list5);
+        listc = new Color[3];
+        listc[0] = new Color (255,215,179);
+        listc[1] = new Color (153,220,225);
+        listc[2] = new Color (224,175,205);
 
-        listOfword = new JScrollPane(listPanel,JScrollPane.VERTICAL_SCROLLBAR_NEVER, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+        list = new RoundedButton[cnt];
+
+        for (int i =0 ; i < cnt ; i++){
+            list[i] = new RoundedButton("단어장 "+(i+1), listc[i%3]);
+            list[i].setPreferredSize(new Dimension(300,60));
+            list[i].setMaximumSize(new Dimension(150,60));
+            list[i].setMinimumSize(new Dimension(100,60));
+            list[i].setAlignmentX(Component.CENTER_ALIGNMENT);
+            
+            listPanel.add(list[i]);
+            listPanel.add(Box.createRigidArea(new Dimension(0,40)));
+            list[i].setFont(new Font("한컴 말랑말랑 Bold", Font.PLAIN,15));
+            list[i].setBackground(Color.white);
+            list[i].setBorder(null);
+
+            list[i].addActionListener(this);
+        }        
+
+        listOfword = new JScrollPane(listPanel);
+        listOfword.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        listOfword.setBorder(null);
            // 스크롤 생김
 
         this.add(printPanel,BorderLayout.NORTH);
-        this.add(listPanel,BorderLayout.CENTER);
+        this.add(listOfword,BorderLayout.CENTER);
 
-        list1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e){
-                select = 1;
-                new MemScreen();
-                setVisible(false);
-            }
-        });
-        list2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e){
-                select = 2;
-                new MemScreen();
-                setVisible(false);
-            }
-        });
-        list3.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e){
-                select = 3;
-                new MemScreen();
-                setVisible(false);
-            }
-        });
-        list4.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e){
-                select = 4;
-                new MemScreen();
-                setVisible(false);
-            }
-        });
-
-        word.setFont(new Font("나눔고딕", Font.BOLD,15));
-        mean.setFont(new Font("나눔고딕", Font.BOLD,15));
-        list1.setFont(new Font("나눔고딕", Font.BOLD,15));
-        list2.setFont(new Font("나눔고딕", Font.BOLD,15));
-        list3.setFont(new Font("나눔고딕", Font.BOLD,15));
-        list4.setFont(new Font("나눔고딕", Font.BOLD,15));
+        today.setFont(new Font("한컴 말랑말랑 Bold",Font.PLAIN,15));
+        word.setFont(new Font("한컴 말랑말랑 Bold", Font.PLAIN,20));
+        mean.setFont(new Font("한컴 말랑말랑 Bold", Font.PLAIN,15));
         
         setSize(350,550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -146,4 +135,45 @@ public class MainScreen extends JFrame {
     public static void main(String[] args) {
         new MainScreen();
     }
-}
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+        for (int i =0 ; i<cnt ; i++){
+            if (e.getSource()==list[i]){
+                select = i+1;
+                new MemScreen();
+                setVisible(false);
+            }
+        }
+    }
+    public class RoundedButton extends JButton {
+        Color c;
+        public RoundedButton() { super(); decorate(); } 
+        public RoundedButton(String text , Color color) { super(text); c=color; decorate(); } 
+        public RoundedButton(Action action) { super(action); decorate(); } 
+        public RoundedButton(Icon icon) { super(icon); decorate(); } 
+        public RoundedButton(String text, Icon icon) { super(text, icon); decorate(); } 
+        protected void decorate() { setBorderPainted(false); setOpaque(false); }
+        @Override 
+        protected void paintComponent(Graphics g) {
+           Color o=new Color(0,0,0); //글자색 결정
+           int width = getWidth(); 
+           int height = getHeight(); 
+           Graphics2D graphics = (Graphics2D) g; 
+           graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON); 
+           if (getModel().isArmed()) { graphics.setColor(c.darker()); } 
+           else if (getModel().isRollover()) { graphics.setColor(c.brighter()); } 
+           else { graphics.setColor(c); } 
+           graphics.fillRoundRect(0, 0, width, height, 30, 30); 
+           FontMetrics fontMetrics = graphics.getFontMetrics(); 
+           Rectangle stringBounds = fontMetrics.getStringBounds(this.getText(), graphics).getBounds(); 
+           int textX = (width - stringBounds.width) / 2; 
+           int textY = (height - stringBounds.height) / 2 + fontMetrics.getAscent(); 
+           graphics.setColor(o); 
+           graphics.setFont(getFont()); 
+           graphics.drawString(getText(), textX, textY); 
+           graphics.dispose(); 
+           super.paintComponent(g); 
+           }
+        }
+} 

@@ -3,7 +3,9 @@ package src;
 import java.awt.*;
 import java.awt.event.*;
 
+import javax.swing.Action;
 import javax.swing.BorderFactory;
+import javax.swing.Icon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -14,23 +16,32 @@ import javax.swing.JPanel;
 //import javax.swing.JTextField;
 
 public class StartScreen extends JFrame {
-    JLabel Title;
-    JButton start;
-    JPanel title, button;
+    private JLabel Title;
+    private RoundedButton start;
+    private JPanel title, button;
 
     public StartScreen() {
         super("Start Screen");
-        setLayout(new BorderLayout(10,20));
-        //this.getContentPane().setBackground(Color.yellow);
+        setLayout(new BorderLayout());
+        this.getContentPane().setBackground(Color.WHITE);
 
         title = new JPanel();
+        title.setBackground(Color.WHITE);
         button = new JPanel();
+        button.setBackground(Color.WHITE);
 
-        start = new JButton("Start");
-        Title = new JLabel("단어장~");
-        title.setBorder(BorderFactory.createEmptyBorder(50,0,0,0));
-        button.setBorder(BorderFactory.createEmptyBorder(0,0,30,0));
+        start = new RoundedButton("START",new Color(255,215,179));
+        Title = new JLabel("단어장");
 
+        title.setBorder(BorderFactory.createEmptyBorder(150,0,0,0));
+        button.setBorder(BorderFactory.createEmptyBorder(0,0,150,0));
+        
+        start.setBackground(Color.white);
+        start.setOpaque(false);
+        start.setBorder(null);
+        start.setPreferredSize(new Dimension(200,50));
+
+        
         button.add(start);
         title.add(Title);
 
@@ -43,10 +54,9 @@ public class StartScreen extends JFrame {
                 setVisible(false);
             }
         });
-        
-        start.setFont(new Font("나눔고딕", Font.BOLD,20));
-        Title.setFont(new Font("나눔고딕", Font.BOLD,20));
 
+        Title.setFont(new Font("한컴 말랑말랑 Bold", Font.BOLD,25));
+        start.setFont(new Font("한컴 말랑말랑 Bold", Font.BOLD,25));
 
         setSize(350,550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,4 +65,35 @@ public class StartScreen extends JFrame {
     public static void main(String[] args) {
         new StartScreen();
     }
+
+    public class RoundedButton extends JButton {
+        Color c;
+        public RoundedButton() { super(); decorate(); } 
+        public RoundedButton(String text , Color color) { super(text); c=color; decorate(); } 
+        public RoundedButton(Action action) { super(action); decorate(); } 
+        public RoundedButton(Icon icon) { super(icon); decorate(); } 
+        public RoundedButton(String text, Icon icon) { super(text, icon); decorate(); } 
+        protected void decorate() { setBorderPainted(false); setOpaque(false); }
+        @Override 
+        protected void paintComponent(Graphics g) {
+           Color o=new Color(0,0,0); //글자색 결정
+           int width = getWidth(); 
+           int height = getHeight(); 
+           Graphics2D graphics = (Graphics2D) g; 
+           graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON); 
+           if (getModel().isArmed()) { graphics.setColor(c.darker()); } 
+           else if (getModel().isRollover()) { graphics.setColor(c.brighter()); } 
+           else { graphics.setColor(c); } 
+           graphics.fillRoundRect(0, 0, width, height, 30, 30); 
+           FontMetrics fontMetrics = graphics.getFontMetrics(); 
+           Rectangle stringBounds = fontMetrics.getStringBounds(this.getText(), graphics).getBounds(); 
+           int textX = (width - stringBounds.width) / 2; 
+           int textY = (height - stringBounds.height) / 2 + fontMetrics.getAscent(); 
+           graphics.setColor(o); 
+           graphics.setFont(getFont()); 
+           graphics.drawString(getText(), textX, textY); 
+           graphics.dispose(); 
+           super.paintComponent(g); 
+           }
+        }
 }
