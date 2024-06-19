@@ -1,4 +1,5 @@
-package src;
+package MyWord;
+
 //import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -23,7 +24,7 @@ public class StartScreen extends JFrame {
         setLayout(new BorderLayout());
         this.getContentPane().setBackground(Color.WHITE);
         setLayout(new BorderLayout(30,20));
-        ImageIcon icon = new ImageIcon("src/icon.png");
+        ImageIcon icon = new ImageIcon("MyWord/icon.png");
         setIconImage(icon.getImage());
 
         cloud = new JLabel();

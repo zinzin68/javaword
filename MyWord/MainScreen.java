@@ -1,4 +1,4 @@
-package src;
+package MyWord;
 
 import java.awt.*;
 import java.awt.event.*;
@@ -62,7 +62,7 @@ public class MainScreen extends JFrame implements ActionListener {
         super("MyWord");
         setLayout(new BorderLayout(10,10));
         this.getContentPane().setBackground(Color.WHITE);
-        ImageIcon icon = new ImageIcon("src/icon.png");
+        ImageIcon icon = new ImageIcon("MyWord/icon.png");
         setIconImage(icon.getImage());
 
         listPanel = new JPanel();

@@ -1,4 +1,4 @@
-package src;
+package MyWord;
 
 //import javax.swing.*;
 import java.awt.*;
@@ -31,7 +31,7 @@ public class MemScreen extends JFrame implements ActionListener{
         ms.setVisible(false);
         this.getContentPane().setBackground(Color.WHITE);
         setLayout(new BorderLayout(30,20));
-        ImageIcon icon = new ImageIcon("src/icon.png");
+        ImageIcon icon = new ImageIcon("MyWord/icon.png");
         this.setIconImage(icon.getImage());
 
         i=0;
